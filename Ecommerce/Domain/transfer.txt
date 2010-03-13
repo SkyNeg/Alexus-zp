@@ -1,0 +1,10 @@
+In order to continue with your request to transfer a domain to our service, we must confirm a few details with you. Please confirm the following: 
+
+— To transfer this domain, you must agree to extend the domain registration account by 1 year.
+— If you would like this domain registration account to be FREE, please indicate the hosting product with at least one free registration credit available.
+— If you would like to mark this domain as PAID, please let us know the last four digits on the credit card we have on file that we may charge for the annual renewal fee.
+— If you are transferring a .org .com .net or .info domain, please confirm that you have received an authorization code for this transfer from your current registrar.
+— The administrative contact email address on file with your current registrar must be one that can be used to reach you. 
+Note carefully: If domain registration is PRIVATE, this feature must be turned off so that your contact information appears correctly on the whois. Incorrect or hidden administrative contact email address will prevent us from completion the process. Currently, whois shows [XXXXX@DOMAIN.COM] as administrative contact. This address will be used to send authorization email for you. Make sure that you can access and read that mailbox. Otherwise, you must change it to valid email address first. In order to do that, you have to contact company where you registered the domain.
+— To avoid website downtime while transfer is in progress, make sure that your domain is pointed to correct name servers.
+Please go through all points above and make sure that every requirement is satisfied. Post a reply to this ticket when you are ready to start the procedure. If you need any further clarification, please do not hesitate to contact us

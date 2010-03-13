@@ -1,0 +1,130 @@
+Dear 
+
+
+
+Kind regards,
+Kirill Skripka
+Technical Support 
+24/7 Live Chat
+Dear Levi,
+
+Let me please inform you, that our administrators have successfully migrated your account to newer mysql509 server. Please re-check if all works fine after migration. Also note, that your mysql settings you can always find under Mysql server link inside your control panel. Thank you for your cooperation with us. Should you have any further question feel free to contact us and we will be glad to assist you. 
+
+Kind regards,
+Kirill Skripka
+Technical Support 
+24/7 Live Chat
+	VPS
+Thank you very much for contacting us regarding this issue. I've forwarded your request to the concerned department, it will be processed shortly. To expedite ticket processing next time, don't forget to choose Product Type: My Virtual Private Server if your request applies to Virtual Private Server package. We appreciate your patience.
+	There is no backups for this account
+I regret to inform you that our administrators have checked the issue from our side and found that there are no available backups of your account currently on the server. We do make regular backup of customer's data but it happens sometime that backups are rotated because we cannot afford to store too old backups due to the many system restrictions of the shared hosting environment, and there is no other backup of your account at the moment. That is why it is much recommended to create local backups of your data by yourself. Thank you for understanding and cooperation.
+	Server was down
+I honestly apologize for inconveniences caused to you. Our system administration team has identified and fixed performance problem on your server. Please check from your end, all should be working perfectly. Service is being monitored to prevent further occurrences of this issue. Thank you for patience and understanding.
+	More Info
+I am sorry but please could you let us know some more detailed information regarding the issue you are currently faced with so we may check it and carry out further investigations in this matter. Please let us know whether you get any error, in such case let us know the URL link or step-by-step instruction to be able to reproduce it.
+Dear ,
+
+Please do not submit duplicate tickets and keep conversation in single thread to avoid delays and unexpected problems while we working on the reported issue. Thank you very much for understanding us in this matter.
+Your first ticket with this problem has ID 914567
+
+Kind regards,
+Kirill Skripka
+Technical Support 
+24/7 Live Chat
+We are more than thankful for your cooperation and patience with us and would like to say that we are glad to assist you anytime. I have changed status of this ticket to Answered. You can close it from your side.
+	In case redirection for Administrators:
+I have forwarded your ticket to our administration department for further investigation. Please wait for our reply, we will get back to you once mentioned issue is resolved. Thank you for understanding and cooperation.
+	Could not reproduce problem
+I regret, but I was not able to reproduce your problem. All sites are working for me properly. Also I did not find any down time for servers of your domains. Please re-check your sites once again. 
+		Wait
+We have set Waiting status for this ticket to keep it open for you, so you are able to update it at any time if the problem reoccurs or if you get any questions regarding this problem. Thank you for the cooperation. If you have any further questions, please feel free to contact us at anytime, we are available 24/7.
+I am sorry, but we do not provide sftp at all. So you are not able to use it. I regret.
+To restore your login e-mail and password we need to confirm some information from you. Could you provide it to us:
+1. last 6 digits of your active CC on account;
+2. CC type;
+3. CC expiry date;
+4. full CC holder's name.
+
+Once you provide this information, we'll give you your correct login data.
+Wrong DNS 
+I have checked your domain and found that you use not our name servers. You could check it from this link: http://who.is/whois-com/ip-address/endlesswishing.com/ Current name servers are:
+    dns1.name-services.com
+    dns2.name-services.com
+    dns3.name-services.com
+    dns4.name-services.com
+    dns5.name-services.com 
+To be able use our mail service you should have our name servers for your domain. That is why you have to go to your registrar (ENOM, INC. ) and change name servers to: ns7.ixwebhosting.com and ns8.ixwebhosting.com
+After DNS propagation (it could take up to 72 hours) your mail will work properly.
+Pop before SMTP
+
+The situation that you have presented is a common occurrence. We use on our mail servers, a method of outgoing mail authentication called pop before SMTP.
+Pop before SMTP does simply what its name states. It requires that you log into your incoming mail server to be able to send email. When your email client logs into your incoming mail server, it then logs your IP address in a temporary (5 minute) cache of IPs that are able to send email through our mail servers. During this period you may send email freely.
+Some newer email clients are designed to handle this form of authentication. If however your email client of choice does not support this method by default, you can simply set your email client to check for new mail every one or two minutes. This method will allow for a constant white list of your IP address. 
+So you could set in your mail software settings: Login into POP server before sending e-mails, or click receive e-mails before sending.
+	Virtual FTP
+Please note that since you have enabled virtual FTP for your domain (FTP Services at control panel), it will reject master FTP login and password as well as FTP subaccounts logins and passwords. If you need to login with master FTP login/password or with FTP subaccount login/password, please use FTP host name 'webXX.ixwebhosting.com'
+		Phishing
+Hello 
+
+Thank you for bringing this security issue to our attention. We highly value both the security and the integrity of our servers. As such, we have done everything in our power to handle the issue for you. The pathway to the phishing redirection content has been disabled, and our customer has been notified of the problem, and will be dealt with accordingly. If you have any questions or concerns you may please contact IX Web Hosting 24/7 at +1- 614-534-1961 or toll free at 1-800-385-0450 (if within the US).
+
+Kind regards,
+Kirill Skripka
+Technical Support 
+24/7 Live Chat
+		Yahoo e-mail
+Yahoo has set Throttle policy to accept certain amount of messages from outside servers per certain time limit, so there is nothing we can do more but wait.
+If you are sending to mail servers different than Yahoo's you can consider issue resolved. We have taken all possible preventive measures to avoid such things from happening in future, and hope it will not reoccur.
+We thank you for your great patience and all understanding
+Dear At Velev,
+
+I honestly apologize for inconveniences caused to you. Our system administration team has identified and fixed performance problem on your server. Please check from your end, all should be working perfectly. Service is being monitored to prevent further occurrences of this issue. Thank you for patience and understanding.
+
+Should you have any further question feel free to contact us and we will be glad to assist you. 
+
+Kind regards,
+Kirill Skripka
+Technical Support 
+24/7 Live Chat
+		mysql migration
+We are very sorry to see our client upset, but let me explain current situation. As you know our company provides shared service for our customers. This implies that all system resources are shared between customer` accounts assigned to the same server. I regret but unfortunately we should confirm that your server is unstable currently. This distressing situation is caused by the fact that an account or several accounts on your server are using such amount recourses of the server that it is causing unstable performance of other accounts shared the server with them. In other words those accounts are overloaders. In current moment we make all our efforts for catching those overloaders. Unfortunately their service can’t be disabled immediately as it requires certain procedures. Our system administrators are working on your server with the highest priority, so the balance of the resources on the server will be restored in the nearest time.
+However, I'll send this ticket to our system administrators' department in order to check if we have any possibilities to move your databases to the less loaded mysql server right now.
+Please accept our sincere apologies once again. We understand that your business in our hands and we are doing our best to make your messages to our Help Desk with positive content only.
+
+
+LogFile="d:\home\poonamjain\logs\afrotrade.net\ex%YY-24%MM-24%DD-24.log"
+SiteDomain="afrotrade.net"
+HostAliases="afrotrade.net www.afrotrade.net"
+LogFormat = "%time2 %host %logname %other %other %other %other %method %url %query %code %other %bytesd %other %other %other %ua %other %referer"
+//LoadPlugin="geoip GEOIP_STANDARD ..\..\..\afrotrade.net\awstats\cgi-bin\GeoIP.dat"
+
+102661 - ticket for CP migration
+t/o on Win server with logresolvemerge.pl tool. Find path to perl?
+
+# config file. 
+LogFile="/usr/bin/perl /hsphere/local/home/tpmdirect/tpmdirect.com/awstats/tools/logresolvemerge.pl /hsphere/local/home/tpmdirect/logs/tpmdirect.com/tpmdirect.com.* |"
+SiteDomain="tpmdirect.com"
+HostAliases="tpmdirect.com www.tpmdirect.com"
+LogFormat=1
+LoadPlugin="geoip GEOIP_STANDARD GeoIP.dat"
+Dear Amy ,
+
+Thank you for your request. We will extend FrontPage extension support for your account until August  1st, 2009. Should you have any further question feel free to contact us and we will be glad to assist you. 
+
+Kind regards,
+Kirill Skripka
+Technical Support 
+24/7 Live Chat
+
+
+I honestly apologize for inconveniences caused to you. Our system administration team is working on this issue. It will be resolved as soon as possible.
+
+
+As with any DNS modification you'll need to wait at least 72 hours for this change to completely take effect worldwide.Dear Kirk 
+
+I have checked your domain and found that current problem was related to corrupted php5-cgi-fcgi.ini file, which is used as php.ini for your domain. I have renamed old file to php5-cgi-fcgi.ini_ and created fresh php5-cgi-fcgi.ini file under your domain folder. Now your site works fine and you can change php.ini settings in new php5-cgi-fcgi.ini file under your domain directory. Please re-check it from your side
+
+Kind regards,
+Kirill Skripka
+Technical Support 
+24/7 Live Chat

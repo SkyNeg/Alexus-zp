@@ -1,0 +1,15 @@
+You can change collation for your databases using phpmyadmin inside your control panel. 
+1. Login to your control panel
+2. Click on Phpmtadmin and then launch for mysql user. 
+3. Select database you want to change collation and go to "Operations" tab
+4. Find there "Collation" field and choose required collation from drop down menu. Then press Go button
+
+
+
+Let me please inform you, that to change collation for your database you should go through next steps:
+1. From your control panel run phpmyadmin for user, that have access to requested database.
+2. Click there on your database.
+3. Click Operations tab
+4. Find Collation: drop-down menu
+5. Select required collation
+6. Click Go button to confirm changes

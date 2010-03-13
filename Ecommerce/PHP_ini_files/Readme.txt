@@ -1,0 +1,1 @@
+In web<300 all changes makes in .htaccess file.

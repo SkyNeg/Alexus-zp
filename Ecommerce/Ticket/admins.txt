@@ -1,0 +1,7 @@
+(7:31:17) dethmix: I have sent your request about checking installed componets to our system administrators. They will check requested componets on server for you. Please note that due to shared hosting wget component is blocked. Unfortunately you won't be able to use it.
+(7:31:21) 242186020: ρορ
+(7:31:27) dethmix: Please check if following components are installed on web34:
+ffmpeg
+flvtool2
+mencoder
+If some components aren't installed could you please install them, if this possible of cource.

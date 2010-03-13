@@ -1,0 +1,17 @@
+Let me explain how transfer to new server block works:
+
+1. You should create a full account backup and download it to your local hard drive. You can use control panel tools to backup your data and save it locally:
+- download backup of web content using WebShell tool from control panel or any local FTP client
+- download mysql backup using Export option in PHPMyAdmin
+- to download your mail messages through any local mail client - receive them using Outlook or Thunderbird or another mail client.
+Please contact us if you need any further instructions on this matter or if you face any difficulties downloading your data.
+
+2. Once you are ready for the migration, we will transfer your account to the new server block. Transfer itself will take 15-30 minutes and you will get a new empty account. Your old control panel will become inaccessible, and you will be able to access new control panel only. Access to your data on old server block will be possible only if you use old IP addresses of your domains for two weeks. 
+
+3. You will need to re-add your domains on new control panel, re-create mail accounts and databases. Then re-upload all related content to a location and re-configure this data accordingly to a new control panel specifics. 
+
+4. You will be able to check your web sites at new server using new IP addresses assigned to your domains by new control panel. If all is ok, you will have to change nameservers for each domain to associate them with your new account. It will take 72 hours to be propagated all over the web. 
+
+5. Your sites will be online during whole procedure, because the data on old servers will still remain accessible. After you change nameservers and point domains to new server block, all connections to your sites will migrate from old server block to new one.
+
+6. You will have two weeks to re-configure your account on new server block and re-upload all related content. After this your account will be completely removed from old server. 

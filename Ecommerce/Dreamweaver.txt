@@ -1,0 +1,45 @@
+﻿You may upload your files using this STEPS below:
+
+Step # 1
+
+Open your DreamWeaver. From “Site” menu choose “New Site”. In opened window please follow this INFO: Site Name: Type any name or the name of your site. This field is only for identification for example:xyz or yourdomainname or whatever you like.
+
+Local Root Folder: Type the location of folder being uploaded or click 'FOLDER ICON” on the right hand side to locate your folder. Check “Refresh Local File List Automatically”.
+
+HTTP Address: yourdomainname.com Cache: check it
+
+Step # 2
+
+Now click “Web Server Info”. A new window will open:
+
+WEB SERVER INFO
+
+Server Access :
+
+Select “FTP”
+
+FTP Host : yourdomainname.com (If name servers are not pointing to us then you need to use server name or IP address) Dreamweaver sometimes requires the exact server for this setting ie. webxxx.opentransfer.com
+
+Host Directory :yourdomain.com
+
+Login : Your FTP login
+
+Password: Your FTP password
+
+Check ” Use Passive FTP”
+
+Click OK
+
+Step # 3
+
+Now finally a site window appears.
+
+Double click your local folder at the right hand side of the above window. i.e. Local Folder. Now click “Connect Button”. When Connection is established, click “Put Files Button” Now relax & wait for uploading of your site.
+
+If you face any difficulty ,ask your host about different entries to be filled, because some entries vary from one server to another server.
+
+You can also upload or download files by click and drag from one window to the next window
+
+If you want to upload only few pages or files ,select them,click and drag them to the next window
+
+For downloading your web pages repeate same procedure but click “GET FILES” button instead of “PUT FILES” button .

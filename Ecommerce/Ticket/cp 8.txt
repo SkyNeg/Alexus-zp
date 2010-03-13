@@ -1,0 +1,92 @@
+﻿Recently we released for production the newest server block, “Control Panel 6”, or cp6.brandname.com, operating under control of Psoft Hsphere v.3. With it, its now possible to provide frequently requested services such as .Net Framework 2.0, php v.5 (simultaneously with php v.4), php operating in behalf of master FTP account, multiple FTP accounts with windows server plans. All control panels from cp6 and up will now have these features.
+How to apply
+
+If a customer shows an interest in getting his account moved to a new control panel, you can find information here
+Version Information
+Web (linux)
+
+    *
+      CentOS release 5 (Final)
+    *
+      apache-1.3.37
+    *
+      php-4.4.7
+    *
+      php-5.2.3
+    *
+      ImageMagick-6.2.8.0
+    *
+      Perl CP6 does not support mod_perl. It means that perl should be executed as cgi like it used to be on all previous web servers. We use FastCGI instead.
+
+IIS (windows)
+
+    *
+      Microsoft Windows 2003
+    *
+      IIS v.6.0
+    *
+      .Net Framework v.1.1
+    *
+      .Net Framework v.2.0
+    *
+      .Net Framework v.3.5
+    *
+      Coldfusion MX 7 (iis301) - *At the present time CP6 customers do not have ColdFusion by default. If it is necessary please simply submit a ticket to IT and they will switch the customer manually to a plan that supports ColdFusion. When we switch all signups to CP6 the ordering wizard and the control panel will provide the option to enable / disable ColdFusion support for the customer.
+
+Important note:
+
+CF MX7 & “Flash Remoting”: Is not currently supported by CP6 for iis300 or the old version, according to YSA; as this is a CF function.
+
+Flash remoting is a technology that allows flash applications to pull from databases with Cold Fusion for faster access to the database than with just ODBC. It is very important that customers are not promised Flash Remoting, because it will result in them canceling later. This has already happened because someone on the sales line gave incorrect information regarding CF MX7 being available and thus support for this feature.
+MS SQL
+
+    *
+      Microsoft Windows 2003
+    *
+      MS SQL SERVER 2005
+
+MySQL
+
+    *
+      MySQL-5.0.41
+    *
+      MySQL-server-5.0.41
+    *
+      MySQL-client-5.0.41
+
+PgSQL
+
+    *
+      postgresql-7.4.17-1
+    *
+      postgresql-contrib-7.4.17-1
+    *
+      postgresql-libs-7.4.17-1
+    *
+      postgresql-server-7.4.17-1
+
+IIS
+Web Options
+
+The new version of H-Sphere control panel allows to set up an application/virtual folder for ASP.NET application on the server through a set of operations in Web Options of the domain. Please use the following step-by-step instructions:
+1. Choose Domain
+2. Web Service → Edit
+3. Web Directories Settings → Edit
+4. Add
+5. Web directory name → Dir name
+6. Web directory path relative to the user home → domainname\dir_name
+7. Submit
+8. Web Application → On
+
+It is required to enable language support for every application separately. Here is an example to enable ASPNET: Web Directories and Web Applications → Web application - dir_name → Go → ASPNET → On
+ColdFusion
+
+CF is set to run with unprivileged account credentials (the same as for ASP.NET - 'Network Service'). Thus, in order to have CF scripts working, ASP.NET should be enabled in CP. Also, if customers need to have write access from CF script to files and directories inside their sites, 'Modify' permissions for 'Network Service' should be assigned per request - in the same way like we do now for ASP.NET.
+MS SQL 2005
+
+While trying to connect to MS SQL database on the new CPs you may get the following error message:
+Cannot open user default database. Login failed.
+Error: 4064
+Please note that this is not a server wide issue and usually can be corrected at the user's side. When you assign an MSSQL user to any MS SQL database on the new CP, that DB is set as default for this database user. On the old CPs 'master' DB was set instead.
+This error is usually caused by usage of 'drop database' statements in the scripts and can be fixed by recreating the same database from the control panel. The users with DBO permissions can drop the assigned databases however, in order to recreate a database a user should be a part of sysadmin or dbcreator roles. These roles cannot be assigned to the user in the shared environment.
+The users should be advised to avoid 'drop database' statements in the scripts. In case the customer claims that this statement was never used a ticket may be forwarded to Win Admin team for further investigation.

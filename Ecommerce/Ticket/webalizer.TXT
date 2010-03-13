@@ -1,0 +1,5 @@
+Please, note, that there are a lot of reasons why your webalizer does not update sometimes. I can tell you some of them:1
+1. There were not enough free disc space to update stats (after adding additional hard drive or clean disc space webalizer cant update by himself, it is necessary to reset it)
+2. Disk quota for your account
+3. Error in running cronjob
+And each problem do not have permanent fix. That is why sometime it is necessary to reset webaliser to make it work again. It is seems there were a lot of such issue during little time interval. But usually it does not happen so often. We appreciate your great patience, and want to satisfy you that we make all from our side to resolve this issue.

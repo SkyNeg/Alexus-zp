@@ -1,0 +1,33 @@
+This error is most often caused by unclosed connections/unfreed resources. In this case the ticket is sent to the admins so that they unload the ASP pool for the client, but the investigation part must be handled from the customer’s end as well. If this problem affects only one domain…The problem is not server wide, so you must not post it to the @techsupport maillist. You may either contact the Windows admin on duty with the request to fix it, or place the ticket to the winadmins’ department, as only they are able to fix this problem. When you are reporting this issue to a windows administrator via CI, please communicate with this administrator that you have informed the customer of his/her responsibility. Sending the ysa a ticket link to the specific ticket you put into the customer (using the template below) will allow the admin to see that you have made the customer's responsibility clear. It is very important for the customer to realize that he/she needs to correct this issue, otherwise the customer will believe that this is a hosting issue rather than coding and will call in again and again. Please do your part as a CR rep to inform the customer and communicate with windows administrators on this point when contacting them.
+
+If this is a server-wide issue, then please report this to the techsupport list along with the server and 3 domain examples.
+The following explanatory template should be sent to the customer:
+
+The possible cause for this error “HTTP/1.1 New Application Failed” is a improperly-configured global.asa file. Once you report the fault to us, we can unload the web site application pool. This will release resources and allow your site to function again, but this only provides a temporary solution. Unless the site is stress tested over a period of time to simulate a multi-site (shared) server you may not be able to replicate this error on your local system.
+
+Check the global.asa file for configuration errors:
+
+If the site uses a database, ensure each and every connection is closed properly under load Calls to the database page. This can result in this error being generated and the site to stop working. Ensure that you open and close the database connection as quickly as possible and preferably before rendering any HTML elements: i. e. please ensure that you are explicitly calling the .Close() method AND then setting the object to Nothing, not just doing the latter. Also, check that the page redirects are made after the database has been closed.
+
+VB Example:
+
+Set Conn = Server.CreateObject("ADODB.Connection")
+Conn.Open myDSN
+Set RS = Conn.Execute("Select * from myTable")
+...
+...
+...
+Set RS = Nothing
+Conn.Close
+Set Conn = Nothing
+If ..... then
+	Response.redirect()
+End if
+<html>
+...
+
+Also, to eliminate unclosed database connections from the list of suspects, you may want to modify the database connection creation function to log each new connection to a text file (date+time+“Open” would be sufficient), and add appropriate code (perhaps a new function) to do the same thing (in the same text file) for each close of a connection. Then checking out of the log the next time the application crashes would show whether everything's being closed properly.
+
+This solution must work for any technique - even if you do not use global.asa file, as its presence does not impact the unclosed connections and un-freed resources that cause this error. Please keep in mind, such resources should be freed by ASP garbage collector, but as it's buggy, they may be left un-freed till ASP pool has no more resources and is not able to create new application.
+
+We recommend you to recheck your code based upon these suggestions and troubleshoot from your end, as we have already done everything within our power to correct this issue on a temporary basis. END TEMPLATE_

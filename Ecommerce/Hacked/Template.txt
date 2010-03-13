@@ -1,0 +1,28 @@
+The web server is very resistant to outside hacking attempts.
+Usually when we receive reports that a website has been hacked it is because the customer has outdated software running on his site and has not patched known security holes. Please note that most of hackers' attacks are usually done through vulnerabilities of website software which you are using (like forums, blogs, CMS, any other php-based applications). We cannot keep them secured as we are not the developers of such kind of software. From our side, all server-side software (web services, FTP services, etc..) we are keeping up-to-date and protected. You should check to make sure that you are running the most secure version of web-based applications and also that none of your modifications could produce a way for an attacker to gain entry to your site. You should check with the creator of these softwares for security updates.
+
+Well, what could be done to prevent it from happening again?
+
+So, It is strongly recommended to review everything that you have in website folder and try to determine the way you may protect your applications. For example, If you have any widely-used software installed (forum, blog, etc.etc.), check the vendor site for recent updates or security fixes.
+
+Please also note that your files are located on the Linux-based server and you are able to change file/folder permissions so make sure you do not have any "open" files/folders with write permissions set for all.
+So please check if any folders has full granted permissions 777 set, which is means that it's worldwriteable for anyone from the Web. Recommended permissions are 755. Please let us know if your content should be restored, so we will help you with it.
+
+I also recommend you to change your current FTP password through the Control Panel (Manage -> FTP manager -> Password icon). Some widespread trojans have a functions to steal FTP passwords from user`s local PC`s and send these passwords to hackers (or special bots which were made by hackers). So you need to scan your local PC for viruses (using in-depth scanning) and change your current FTP password.
+
+It will prevent your websites from further attacks. Thanks for your cooperation.
+
+
+
+
+
+
+
+
+Please note that most of hackers' attacks are usually done through vulnerabilities of website software which you are using (like forums, blogs, CMS, any other php-based applications). We cannot keep them secured as we are not the developers of such kind of software. From our side, all server-side software (web services, FTP services, etc..) we are keeping up-to-date and protected.
+It is strongly recommended to review everything that you have in website folder and check webserver logs to determine the way you may protect your application against further intrusions. If you have any widely-used software installed, check the vendor site for recent updates or security fixes. Our advise is to contact a qualified webmaster for remedying this problem, since customization and fixing third-party software falls out of our support boundaries unfortunately.
+
+You can investigate this issue by checking your website access logs located in the FTP root directory: /logs folder
+We also can recommend you to make an audit of all scripts/applications hosted on this account and make sure that everything is uploaded to the latest versions and doesn't have any known unfixed security issues.
+Please also note that your files are located on the Linux-based server and you are able to change file/folder permissions so make sure you do not have any "open" files/folders with write permissions set for all.
+

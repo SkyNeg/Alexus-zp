@@ -1,0 +1,25 @@
+<%@Page Language="VB" %> 
+
+<% @Import Namespace= "System.Web.Mail" %>
+
+<%
+
+Dim mail As New MailMessage() 
+
+mail.To = "user@yourdomainname.com" 
+
+mail.From = "user@yourdomainname.com" 
+
+mail.Subject = "Test." 
+
+mail.BodyFormat = MailFormat.Html 
+
+mail.Body = "Test Message" 
+
+mail.Priority = MailPriority.High
+
+SmtpMail.SmtpServer = "localhost" 
+
+SmtpMail.Send(mail) 
+
+%>

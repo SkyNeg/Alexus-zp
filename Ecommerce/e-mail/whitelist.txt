@@ -1,0 +1,6 @@
+So we suggest you to whitelist the email address which you are using as sender email address with your web form.
+To whiltelist the email address you should provide us with the answers on the following questions:
+- How much messages you need to send per month
+- Please describe maillist policy regarding bounced messages
+- Please let us know what application is used to send list messages
+- Please let us know mail address, which will be shown as return-path in list messages (the address, where bounced are collected)

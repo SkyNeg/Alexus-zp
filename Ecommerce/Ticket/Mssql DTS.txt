@@ -1,0 +1,53 @@
+For using method DTS( server-to-server copy) your db login should have dbo permissions on databases, so I'm forwarding this ticket to our system administrators, they will grant dbo as soon as possible. Below you'll can see steps for configuring and using DTS:
+When creating an SQL connection using SQL Server you will need to:
+
+Configure the server alias
+Create the SQL connection.
+Configure the Server alias
+
+Ordered List Item
+Open SQL Server Client Network Utility.
+When Client Network Utility opens, click on the Alias tab.
+Click on the Add button.
+In the Server Alias text box enter a name for your SQL connection.
+Select TCP/IP under Network libraries
+Enter the IP address of the Server your SQL database is located on, in the Server name text box.
+Click on the OK button.
+Your Server alias will now be configured, click on the Apply button.
+Click on the OK button.
+Create Connection
+
+Open SQL Server Enterprise Manager
+When Enterprise Manager opens, right click SQL Server Group and select New SQL Server Registration.
+The Register SQL Server wizard will now open.
+Ñlick on the Next button.
+From the Available Servers drop down menu, select the server alias you created earlier.
+Click on the Add button.
+The server should now be listed under Added servers, click on the Next button.
+When the next dialog box appears select "The SQL Server login information that was assigned to me by the system administrator" (see above).
+Click on the Next button.
+Enter your Login name and Password - this will be used every time you connect to your SQL server. Click on the Next button.
+Ensure that "Add the SQL Server(s) to an existing SQL Server group" is selected and "SQL Server Group" is selected for Group name.
+Click on the Next button.
+When the next dialog box opens you can click on the Finish button.
+Your SQL Connection will now be created.
+
+Open Enterprise Manager on your local computer.
+Locate your SQL server.
+Open the Database Directory.
+Right Click on the database that you wish to export.
+Select "All Tasks" and then "Export Data..." A wizard will appear.
+Click Next on the wizard.
+Select your data source that you wish to export.
+Click Next.
+Select your destination.
+Input the server"s IP address of your SQL account(You'll find it at control panel, MSSQL server section).
+
+On the next screen, ensure you select "Copy objects and data between SQL databases". This will ensure that all data, logins, stored procedures, etc are copied.
+Click Next.
+On the "Objects to Copy" screen, most of the defaults will be fine. Ensure the defaults are what you desire. Uncheck the "Use Default Options Check Box" then click on the options button.
+Uncheck the "Copy database users and database roles" and the "Copy object-level permissions" option.
+Click ok then next.
+A summary of your selections will be posted at the end of the wizard with a "Finish" button.
+Click Finish if you"re ready to export the data.
+The data will be DTS"ed to your SQL account. The wizard will give you the status during the transfer.

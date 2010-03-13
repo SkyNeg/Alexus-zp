@@ -1,0 +1,4 @@
+<?
+if(!function_exists('zend_optimizer_version')) echo 'Zend Optimizer is not installed';
+else echo 'Zend Optimizer version: '.zend_optimizer_version();
+?>

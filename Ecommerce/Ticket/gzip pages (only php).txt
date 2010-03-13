@@ -1,0 +1,3 @@
+﻿php.ini
+output_handler          = ob_gzhandler
+http://www.gidnetwork.com/tools/gzip-test.php/1.php

@@ -1,0 +1,41 @@
+dig fengshui.chisense.co.uk +trace
+
+; <<>> DiG 9.3.4-P1 <<>> fengshui.chisense.co.uk +trace
+; (1 server found)
+;; global options:  printcmd
+.                       460847  IN      NS      I.ROOT-SERVERS.NET.
+.                       460847  IN      NS      F.ROOT-SERVERS.NET.
+.                       460847  IN      NS      D.ROOT-SERVERS.NET.
+.                       460847  IN      NS      G.ROOT-SERVERS.NET.
+.                       460847  IN      NS      C.ROOT-SERVERS.NET.
+.                       460847  IN      NS      B.ROOT-SERVERS.NET.
+.                       460847  IN      NS      K.ROOT-SERVERS.NET.
+.                       460847  IN      NS      H.ROOT-SERVERS.NET.
+.                       460847  IN      NS      J.ROOT-SERVERS.NET.
+.                       460847  IN      NS      M.ROOT-SERVERS.NET.
+.                       460847  IN      NS      A.ROOT-SERVERS.NET.
+.                       460847  IN      NS      E.ROOT-SERVERS.NET.
+.                       460847  IN      NS      L.ROOT-SERVERS.NET.
+;; Received 500 bytes from 192.168.4.1#53(192.168.4.1) in 0 ms
+
+uk.                     172800  IN      NS      NS1.NIC.uk.
+uk.                     172800  IN      NS      NS2.NIC.uk.
+uk.                     172800  IN      NS      NS3.NIC.uk.
+uk.                     172800  IN      NS      NS4.NIC.uk.
+uk.                     172800  IN      NS      NS5.NIC.uk.
+uk.                     172800  IN      NS      NS6.NIC.uk.
+uk.                     172800  IN      NS      NS7.NIC.uk.
+uk.                     172800  IN      NS      NSA.NIC.uk.
+uk.                     172800  IN      NS      NSB.NIC.uk.
+uk.                     172800  IN      NS      NSC.NIC.uk.
+uk.                     172800  IN      NS      NSD.NIC.uk.
+;; Received 503 bytes from 192.36.148.17#53(I.ROOT-SERVERS.NET) in 49 ms
+
+chisense.co.uk.         172800  IN      NS      ns14.ixwebhosting.com.
+chisense.co.uk.         172800  IN      NS      ns13.ixwebhosting.com.
+;; Received 95 bytes from 195.66.240.130#53(NS1.NIC.uk) in 60 ms
+
+fengshui.chisense.co.uk. 86400  IN      A       98.130.164.2
+chisense.co.uk.         86400   IN      NS      ns14.ixwebhosting.com.
+chisense.co.uk.         86400   IN      NS      ns13.ixwebhosting.com.
+;; Received 143 bytes from 98.130.1.3#53(ns14.ixwebhosting.com) in 166 ms

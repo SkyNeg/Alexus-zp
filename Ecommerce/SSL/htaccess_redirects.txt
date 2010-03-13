@@ -1,0 +1,55 @@
+Old method for HTTP to HTTPS Redirection
+
+This is the old way I would have to use to redirect /index.html to / and urls with // to /.
+
+RewriteEngine On
+RewriteBase /
+RewriteCond %{HTTPS} !=on
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /(.*)index\.html\ HTTP/ [NC]
+RewriteRule ^.*$ http://%{SERVER_NAME}/%1 [R=301,L]
+ 
+RewriteCond %{HTTPS} =on
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /(.*)index\.html\ HTTP/ [NC]
+RewriteRule ^.*$ https://%{SERVER_NAME}/%1 [R=301,L]
+ 
+RewriteCond %{HTTPS} !=on
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /(.*)//(.*)\ HTTP/ [NC]
+RewriteRule ^.*$ http://%{SERVER_NAME}/%1/%2 [R=301,L]
+ 
+RewriteCond %{HTTPS} =on
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /(.*)//(.*)\ HTTP/ [NC]
+RewriteRule ^.*$ https://%{SERVER_NAME}/%1/%2 [R=301,L]
+
+New HTTPS to HTTP Redirection
+
+First I set the environment variable ps to have the value “http” for HTTP requests, or “https” for HTTPS requests. Once that is accomplished, I can use %{ENV:ps} in all of my rewriterules and it will result in https for SSL requests and http for non-ssl requests!
+
+RewriteCond %{HTTPS} =on
+RewriteRule ^(.+)$ - [env=ps:https]
+RewriteCond %{HTTPS} !=on
+RewriteRule ^(.+)$ - [env=ps:http]
+ 
+# redirect urls with index.html to folder
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /(.*)index\.html\ HTTP/ [NC]
+RewriteRule ^.*$ %{ENV:ps}://%{SERVER_NAME}/%1 [R=301,L]
+ 
+# change // to /
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /(.*)//(.*)\ HTTP/ [NC]
+RewriteRule ^.*$ %{ENV:ps}://%{SERVER_NAME}/%1/%2 [R=301,L]
+
+Even Newer HTTP/HTTPS Rewrite Code
+
+The top guru I have ever seen in my lengthy .htaccess related web travels is a moderator on the WebmasterWorld.com Apache Forum, jdMorgan. Upon seeing the above solution that I came up with, jdMorgan instantly provided an improvement, resulting in being able to set the environment variable in 1 rewrite block instead of 2. This is truly Sweet.
+
+RewriteCond %{SERVER_PORT}s ^(443(s)|[0-9]+s)$
+RewriteRule ^(.+)$ - [env=askapache:%2]
+ 
+# redirect urls with index.html to folder
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /([^/]+/)*index\.html\ HTTP/
+RewriteRule ^(([^/]+/)*)index\.html$ http%{ENV:askapache}://%{HTTP_HOST}/$1 [R=301,L]
+ 
+# change // to /
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /(.*)//(.*)\ HTTP/ [NC]
+RewriteRule ^.*$ http%{ENV:askapache}://%{HTTP_HOST}/%1/%2 [R=301,L]
+
+« SEO Secrets of AskApache.comAdding Akismet Anti-Spam Protection Anywhere »

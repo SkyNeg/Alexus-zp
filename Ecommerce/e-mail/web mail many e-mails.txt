@@ -1,0 +1,8 @@
+As I can see your have 6886 messages in your mailbox that is why you cannot access it through webmail because it is not designed to work with such amount of messages. To solve the issue you can connect to the server through local email client and download all the messages to your local machine with an option 'not to leave messages on the server'. Or you can ask us to delete all the messages from the server side in order to be able to access your mailbox via web interface. If you need it please update this ticket with your request and we will do it for you
+
+
+
+
+The reason of such an issue can be related to the fact there are stored too many messages under mentioned mail account. Please, take to note, that it is not possible to store on the server much mail data, your account will not be accessible under Webmail, as it is web-based. In this case it is strongly recommended to load the incoming message with locally configured mail client, and remove part of them, so you will be able to access the mail account with Horde. Also, you may store the messages locally on your PC, with an mail client,  like Outlook, or any other, and have always available access to them.
+
+The second reason may occur is large batch of filters configured under the mail account, so each message received is checked for any filter restrictions to be exist in it, and webmail just times out. In this case we may suggest to remove all the filters you have configures under problematic mail account, so you will be able to configure them from the scratch, avoiding complex or expressions.

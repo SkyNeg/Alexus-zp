@@ -1,0 +1,112 @@
+$googleCurrencyConvertor = new GoogleCurrencyConvertor("1","EUR","AED");
+							$rate = round($googleCurrencyConvertor->getRate(), 2);
+                        	echo "1 EUR = ".$rate . " AED"; 
+                        	
+                        	
+                        	
+<?php
+/**
+ * Converts currency using Google's Currency Converter
+ *
+ * @author Rochak Chauhan
+ * 
+ * @see Currency Conversion Disclaimer
+ * Google cannot guarantee the accuracy of the exchange rates used by the calculator. 
+ * You should confirm current rates before making any transactions that could be affected by changes in the exchange rates. 
+ * Foreign currency rates provided by Citibank N.A. and displayed under license. 
+ * Rates are for information purposes only and are subject to change without notice. 
+ * Rates for actual transactions may vary, and Citibank is not offering to enter into any transaction at any rate displayed. 
+ * NOT FOR COMMERTIAL USE
+ */
+class GoogleCurrencyConvertor{
+    private $rate="";
+    private $reverseRate="";
+
+    /**
+     * Contructor function
+     *
+     * @param int $amount
+     * @param string $currFrom
+     * @param string $currInto
+     * 
+     * @return resource
+     */
+    public function __construct($amount, $currFrom, $currInto){
+        if (trim($amount)=="" ||!is_numeric($amount)) {
+            trigger_error("Please enter a valid amount",E_USER_ERROR);         	
+        }
+        $return=array();
+        $gurl="http://www.google.com/search?&q=$amount+$currFrom+in+$currInto";
+        $html=$this->getHtmlCodeViaFopen($gurl);
+        $pattern='/<h2 class=r(.*)\<\/h2\>/Uis';
+        echo "$pattern";
+        preg_match_all($pattern,$html,$return,PREG_PATTERN_ORDER);
+        if (isset($return[0][0])) {
+            $rate=strip_tags($return[0][0]);
+            $tmp=explode("=",$rate);
+            $rate=$tmp[1];
+            $this->rate=$this->getIntegers($rate);            
+            $this->reverseRate=1/$this->rate;
+        }
+        else {
+            $this->rate=$this->reverseRate="Google could not convert your request. Please try again.";
+        }
+    }
+    
+    /**
+     * Function to get only integers from a string
+     *
+     * @param string $str
+     * @return int
+     */
+    private function getIntegers($str){
+        $ret="";
+        $str=trim($str);       
+        for ($i=0;$i<strlen($str);$i++){
+            $code=ord($str[$i]);
+            if( ($code>47 && $code<58) || $code==46) {
+               $ret.=$str[$i];        	
+            }
+        }
+        return $ret;
+    }
+    
+    /**
+     * Fucntion to get HTML code of a URL
+     *
+     * @param string $url
+     * @return string
+     */
+    function getHtmlCodeViaFopen($url){
+        $returnStr="";
+        $fp=fopen($url, "r") or die("ERROR: Failed to open $url for reading via this script.");
+        while (!feof($fp)) {
+            $returnStr.=fgetc($fp);
+        }
+        fclose($fp);
+        return $returnStr;
+    }
+
+    /**
+     * Function get the converter Rate
+     *
+     * @access public
+     * 
+     * @return int
+     */
+    function getRate(){
+        return $this->rate;
+    }
+
+    /**
+     * Function get the reverse of converter Rate
+     * 
+     * @access public
+     * @return int
+     *
+     */
+    function getReverseRate(){
+        return $this->reverseRate;
+    }
+}
+?>

@@ -1,0 +1,17 @@
+Recently we have changed the scheme of sending mails from windows php
+forms using mail() function. It was: iis server-helper server-
+mail2.opentransfer.com. In order to decrease load on mail2, we have
+changed the scheme to iis server-helper server -
+smarthost.opetransfer.com with all its limits and conditions (200
+mails per hour, 300 mails per day from the same sender). So if sender
+is not specified, all mails will be sent from
+httpd@iisXX.opentransfer.com . Customers have to specify sender in their
+forms not to share these limits with other customers. Below is the
+template that may be used in tickets (feel free to customize it):
+
+I would like to bring to your attention that we have certain limits on
+the smarthost server which is responsible for sending mails using php
+mail() function from web servers. In order not to share these limits
+with other customers on your server you should insert the following
+string before php mail() function in your form:
+   

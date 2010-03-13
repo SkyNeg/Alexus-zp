@@ -1,0 +1,5 @@
+vtiger password change to admin:
+
+update vtiger_users set user_hash=’21232f297a57a5a743894a0e4a801fc3', user_password=’adpexzg3FUZAk’,confirm_password=’adoY/6Mlw8kqg’,crypt_type=”  where user_name=’admin’;
+
+update vtiger_users set user_hash='21232f297a57a5a743894a0e4a801fc3', user_password='adpexzg3FUZAk',confirm_password='adoY/6Mlw8kqg',crypt_type=''  where user_name='admin';

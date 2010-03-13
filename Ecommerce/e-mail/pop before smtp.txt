@@ -1,0 +1,9 @@
+The situation that you have presented is a common occurrence. We use on our mail servers, a method of outgoing mail authentication called pop before SMTP.
+
+Pop before SMTP does simply what its name states. It requires that you log into your incoming mail server to be able to send email. When your email client logs into your incoming mail server, it then logs your IP address in a temporary (5 minute) cache of IPs that are able to send email through our mail servers. During this period you may send email freely.
+
+Some newer email clients are designed to handle this form of authentication. If however your email client of choice does not support this method by default, you can simply set your email client to check for new mail every one or two minutes. This method will allow for a constant white list of your IP address.
+To solve this issue you have to login into your POP account before sending e-mails:
+1) Increase the connection time out to 5 mins from accounts properties,
+2) Also increase your Send/Receive time to at least 5 mins.
+3) Check for incoming e-mails at start your mail software

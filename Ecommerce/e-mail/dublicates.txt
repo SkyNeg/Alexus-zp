@@ -1,0 +1,3 @@
+Our administrators have cehcked these headers and found that it is the same e-mail that was delivered only once to your mail account. But the reason you receive it twice with your mail software could be caused by network connection issues or mail client problems.
+Your mail client downloads message, and then connection on your side breaks, and mail client has no chance to send QUIT(downloaded messages drops on server after QUIT command: rfc1939) message to pop3 server. that is why downloaded message doesn't delete from the server and you download it again. 
+To check that this e-mail was delivered only once to your account, you can use webmail horde to access your mail account. There you will find only one copy of this e-mail.

@@ -1,0 +1,28 @@
+http://www.kitterman.com/spf/validate.html
+
+Wizard foor TXT SPF records
+http://old.openspf.org/wizard.html
+
+Ticket about it: https://ghcp.ecommerce.com/index.php/helpdeskticket.dspFrmTicketModify/hd_ticketid/1052635
+Dmitriy Pavlov, Sat 04 Jul 2009 11:31:24 PM UTC
+Ticket Internal Status was changed from General Pool to Sysadmin
+Oleg Nauman assigned as a subscriber
+Dmitriy Pavlov assigned as a subscriber
+Customer has created spf record for domain chinesewife.com. It was successful added and DNS propagation passed. After checking this domain name through online validation tool at " http://www.kitterman.com/spf/validate.html" customer gets message that SPF record isn't valid. According to "http://www.openspf.org/SPF_Record_Syntax" it is possible that such error appears because opentransfer.com, mail505.opentransfer.com and other server which was used in this spf records haven't proper SPF record added. Could you please check this issue and provide us with the example of valid SPF record which can use our customers.
+
+web510
+user C257398
+
+P.S. Oleg if this possible please handle this ticket, because SPF feature isn't properly described in our docs and I think that only you will be able to shed light on this question.
+
+Thanks.
+Oleg Nauman, Sun 05 Jul 2009 12:47:30 PM UTC
+Ticket Internal Status was changed from Sysadmin to General Pool
+Oleg Nauman removed as a subscriber
+Hello subscribers,
+
+SPF records validation feature for shared hosting mail servers provided *as is*
+The keyword is *shared*
+Fully implemented SPF checks are impossible without all customers agreement because such type of checks it is a mail server property not a particular domain property
+It means it never will be switched into "bounce due to failed SPF checks" on shared mail server otherwise it will bounce valid mail messages for customers - including those who enabled SPF records because they are do not understand what does it mean really.
+People SPF is a false miracle attracting the idiots nothing more

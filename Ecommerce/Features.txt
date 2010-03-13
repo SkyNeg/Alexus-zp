@@ -1,0 +1,97 @@
+Supported Features
+
+webDEV	-	Do not supported!!!
+
+What do we support?
+General
+
+    *
+      HTML - Yes.
+    *
+      JSP - No.
+    *
+      JRE - No.
+    *
+      Frontpage - Yes (MS Frontpage 98 - only FTP publish mode, obsolete). frontpage 2003
+    *
+      mySQL - Yes.
+    *
+      SFTP / Secure FTP / SCP - No.
+    *
+      PHP with GD - Yes
+    *
+      CGI - Yes (perl, python, python 2, ruby)
+    *
+      Ruby - Yes (1.6)
+    *
+      Ruby on Rails - No
+    *
+      Fantastico - No
+    *
+      XSLT - Yes
+    *
+      Apache - Yes.
+    *
+      Multiple FTP Accounts - Yes.
+    *
+      Password-protected folders - Yes.
+    *
+      mod_perl - No
+    *
+      innodb engine(MySQL) - Yes, but not recommended for production use
+    *
+      ImageMagick - Yes
+    *
+      Formmail, counter, Chat - Yes
+
+Windows Specific
+
+    *
+      EXE Files - No.
+    *
+      IIS - Yes.
+    *
+      MSSQL - Yes.
+    *
+      ASP - Yes.
+    *
+      ASP.NET - Yes (Microsoft .NET Framework versions 1.1, 2.0, 3.5).
+    *
+      C# - Yes
+    *
+      Email components : Jmail, CDOSYS
+    *
+      Cold Fusion - Yes.
+    *
+      PHP - Yes.
+    *
+      Multiple FTP Accounts - No.
+    *
+      FSO (File System Object) - Yes.
+    *
+      MDAC 2.8 -Yes.
+    *
+      Microsoft Jet Database Engine 4.0 - Yes.
+
+Cold Fusion Restricted Tags
+
+    *
+      CFCONTENT
+    *
+      CFOBJECT
+    *
+      CFREGISTRY
+    *
+      CFADMINSECURITY
+    *
+      CFEXECURTE
+    *
+      CFLOG
+
+Cold Fusion Monitored Tags
+
+    *
+      CFDIRECTORY
+    *
+      CFFILE
+

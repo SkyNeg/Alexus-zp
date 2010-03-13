@@ -1,0 +1,1 @@
+You may create them by yourself. Please go to hosting control panel, then click web options for needful domain, then click edit button for "Web Directories Settings", then click add button and now you are able to create needful virtual directory.

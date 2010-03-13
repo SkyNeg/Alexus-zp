@@ -1,0 +1,9 @@
+df -h
+
+<?
+echo str_replace ("\n", "<br>",`df -h`);
+?>
+
+<?
+echo str_replace ("\n", "<br>",`which mysqldump`);
+?>

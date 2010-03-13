@@ -1,0 +1,25 @@
+Click on your folder icon in webshell, then will appear menu in the right side of the page. There will be option create .htaccess file
+
+[05:12:09] Alice Zerkal: ou can setup password protection to sub directory (folder) of your domain using our Graphical tool “WebShell3” 
+[05:12:09] Alice Zerkal: the File Manager. Follow these steps to accomplish your task. http://www.ixwebhosting.com/index.php/v2/pages.manual7#q1e
+[05:12:09] Alice Zerkal: Login into control panel 
+[05:12:09] Alice Zerkal: http://manage.ixwebhosting.com 
+[05:12:09] Alice Zerkal: Click Manage button near the Hosting package box. 
+[05:12:09] Alice Zerkal: On the main screen scroll down to see tools, under tools click on the webshell3 icon.
+[05:12:09] Alice Zerkal: 1) This wll Open your WebShell3, Select your domain (site) you want to work with (click on it).
+[05:12:09] Alice Zerkal: 2) Click on the folder which you want to give password protection.
+[05:12:09] Alice Zerkal: 3) Click on “Protect” in the top menu bar in webshell screen.
+[05:12:09] Alice Zerkal: 4) For “AuthType” field, let it be “basic”. Not required to change (please leave as is)
+[05:12:09] Alice Zerkal: 5) You can give “AuthName” as you want. This is text which will appears at login dialog box when you are trying 
+[05:12:09] Alice Zerkal: to give username and password.(It can be given text of your choice)
+[05:12:09] Alice Zerkal: 6) For field “AuthUserFile” (/.htmaster/.ok_user is the default value) this is the file where your user details
+[05:12:09] Alice Zerkal: are stored, you need to click on “edit” button to add user to the folder you have chosen. Specify your username and password. Save it.
+[05:12:09] Alice Zerkal: 7) Finally, click on “Create” button which is at the lower end of the page,
+[05:12:09] Alice Zerkal: This will password protect your folder.
+
+
+
+	Remove www
+RewriteEngine On 
+RewriteCond %{HTTP_HOST} ^www.domain.com$ [NC]
+RewriteRule ^(.*)$ http://domain.com/$1 [R=301,L]

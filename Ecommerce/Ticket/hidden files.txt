@@ -1,0 +1,5 @@
+To enable showing hidden files in your webshell you should follow this instruction:
+Enter your file manager from control panel->Click "Settings" button in the top right corner of the page->Find there "settings" and "show hidden files" check box. Check it and press Save button.
+To enable showing hidden files in your webshell you should follow this instruction:
+Enter your file manager from control panel
+Click Settings in the foot right corner of the page->Check "show hidden files" and click apply button.

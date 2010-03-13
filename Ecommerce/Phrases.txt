@@ -1,0 +1,119 @@
+Hello, my name is Kirill. How can I help you today?
+
+I am sorry, there is slow issue with the service related to you control panel. Our administrators are working on this issue. We will fix it as fast as possible
+
+I am sorry, there is slow issue with web service at this moment. Our administrators are working on this issue. It should be solved as soon as possible. Unfortunately there is no ETA for solving this problem
+
+I am sorry, there is a slight issue with web server at this moment. It is primary task our administrators are working on. All should be fixed as soon as possible and then you will be able to access your sites as well as control panel and all other services again. 
+
+
+Ok, then you need to create a ticket about blacklisting of mail306.ixwebhosting.com server on http://www.mxtoolbox.com/ and ask there for solution. Our administrators will try to contact 
+
+ I am sorry, there is a slight issue with web server at this moment. It is primary task our administrators are working on. All should be fixed as soon as possible and then you will be able to access your site again. For now it is possible to access your e-mails using external e-mail client, such as outlook, the bat, etc
+
+
+Please feel free to contact us if you need further assistance. We are available 24/7
+
+/hsphere/shared/php5/bin/php-cgi -q /hsphere/local/home/bodyguardbiz/vegasteenscene.com/periodic/cupid.php
+I am sorry. you cant, we do not allow adult content on our host
+
+I am sorry for disconnect again
+
+Still here, I am sorry for delay
+
+Please provide your domain name
+
+Is there anything else I can assist you with?
+
+I have not received any response from you for a long time, so I have to stop chat. I am sorry
+
+We are sorry, but one of our server is currently down. Our administrators are fixing it now, so it will be available as soon as possible
+
+One of our mysql server is on prophylaxis. It will start again as soon as possible
+
+Yes, I'm sorry for delay, I'm still checking.
+
+Unfortunately we do not provide coding support
+
+Should have any further questions, feel free co contact us at anytime. We are available 24/7.
+
+Your problem needs for further investigation. Please create a ticket with detailed description of your problem and our specialists will help you as soon as possible
+
+Sorry for the inconvenience, unfortunately, I can't find the source of the problem on your site. Please create a ticket from your account control panel->24/7 help center and our system administrators will investigate it and fix as soon as possible.
+
+You have to login into your account panel->click 24/7 Help Center->Create New Ticket and explain there your problem
+
+To restore your account information you could make a call to our call center 1-800-385-0450
+
+Unfortunately, no via shared hosting restrictions. We do allow certain types of streaming, others we do not. Here is a brief overview of what we do and do not support as far as streaming
+
+I honestly apologize for inconveniences caused to you. There is a temporary problem with server. System administration team identified about the problem. They are working hard on this issue. We are trying to do our best to provide you with the service that you deserve and keep the server's performance stable. Please give us additional time to get the process completed. After the works' completion your sites will be back to their original state.
+
+
+Please accept my apologies according situation caused your server. We are sorry for this the downtime issues and inconvenience. It was a slight issue with our server. I would like to let you know that our administrators have already fixed this issue. The server is back online and should work without any problem. Service is being monitored to prevent further occurrences of this issue.  Again, I apologize for the inconvenience and thank you for your understanding.
+
+
+We are deeply sorry to inform you that we were not able to restore the content from any other backup as it was restored. MySQL server had experienced the hardware failure so that's why the content was restored from our most recent backup. Please accept our apologies once again. A lot of work has been done to enable web server's proper functioning and stable performance. Our administrators have done their best to complete all the recovery actions and prevent this from happening in the future. And now thay working round the clock and apply all their efforts to maintain the server. Please note that it is recommended to create a local backups.
+We really rely on your understanding and patience and thank you so much for still using the services we provide and not being indifferent to this company as your host.
+
+
+coolbeatbiz@yahoo.com
+courtesy
+расписание
+заменить
+определять
+очередь
+
+
+scottmoerike@shaw.ca
+
+/hsphere/local/home/tsaari/xtremelysatisfied.com/cgi-bin/php5-cgi /hsphere/local/home/tsaari/xtremelysatisfied.com/cron/cron.php
+
+Unix
+
+    *
+      Perl - /usr/bin/perl
+    *
+      PHP - /usr/local/bin/php
+    *
+      Sendmail - /usr/sbin/sendmail
+    *
+      Date - /bin/date
+    *
+      Python - /usr/bin/python
+    *
+      Python2 - /usr/bin/python2
+    *
+      ImageMagick - /usr/X11R6/bin/ (mogrify,convert, identify)
+    *
+      CURL - /usr/bin/curl
+    *
+      ffmpeg /usr/bin/ffmpeg
+    *
+      Dcraw /usr/bin/dcraw
+
+Customer Home Directory
+
+    *
+      /hsphere/local/home/<username>
+    *
+      Replace <username> with the customers account username
+
+
+its been works
+Visitor: working
+
+
+From To reassign your domain follow next steps:
+login into the account where you have domain to reassign->click My Products in the left menu->click Reassign Products->then click Reassign button against your domain product->Choose Existing Customer, enter that costumer Email Login: and click Reassign
+
+I am sorry, you have to change your FTP password from your FTP manager in control panel. Recently we have changed it to protect our costumers from hackers attack. Also we have sent notification e-mail to all costumers. Probably you have not received it yet, or have not read
+
+
+
+At first, please tale our sincere apologies for the inconvenience you might have encountered due to FTP passwords change we applied. We were forced to perform this important step urgently because of dramatically increased amount of hacks all over the Internet.
+This was done only for the purpose of preventing possible hacking of your account. As well, we have put strong requirements for password to not allow setting weak ftp passwords anymore.
+I need to draw your attention that ftp passwords change was just one of several security measures we performed to help protect customer's accounts from hackers. For example, we upgraded Apache and ProFTPd versions, installed mod_security on all our servers to eliminate XSS attacks. We appreciate your patience and understanding in this situation as we doing our best to provide the highest level of web hosting services. Thank you for cooperation. 
+
+gjosol@gmail.com	afterhourscustoms.com
+несуществующий

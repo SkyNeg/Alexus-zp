@@ -1,0 +1,21 @@
+AddType application/x-httpd-php .php .php3 .html .htm
+
+
+AddHandler php-cgi .php .html
+Action php-cgi /cgi-bin/php-cgi
+
+ErrorDocument 404 /404.html
+AddType application/x-httpd-php .htm
+AddType application/x-httpd-php .html
+Options -Indexes
+
+
+
+
+
+<FilesMatch filename.avi>
+AuthName "Restricted File"
+AuthType Basic
+AuthUserFile .htpasswd
+require valid-user
+</FilesMatch>

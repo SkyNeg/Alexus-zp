@@ -1,0 +1,3 @@
+
+With IIS 6.0, Microsoft changed the way streaming media is handled. Previous versions of IIS did not require any modification to stream Flash Video. Microsoft IIS 6.0, the default web server that ships with Windows 2003, requires a MIME type to recognize that FLV files are streamed media.
+http://www2.ixwebhosting.com/index.php/v2/pages.manual7#q1i

@@ -1,0 +1,73 @@
+<%@ Page Language="VB" EnableSessionState="False"
+EnableViewState="False" Trace="False" Debug="False"%>
+<%@ Import Namespace="System.Web.Mail" %>
+<script language="VB" runat=server>
+
+Sub Page_Load(Sender as Object, E as EventArgs)
+   If Page.IsPostBack Then
+       lblResponse.Text = "Your email has been sent."
+   End If
+End Sub
+
+Sub btn_Click(sender as Object, e as System.EventArgs)
+ If  Request.Form("Email") <> "" Then
+   Dim objMail As New MailMessage()
+   objMail.From = "your_name@yourdomain.com"
+   objMail.To = Request.Form("Email")
+   objMail.Subject = Request.Form("Subject")
+   objMail.Body = Request.Form("Message")
+   objMail.BodyFormat = MailFormat.Text
+   SmtpMail.SmtpServer = " smtp.your-server.com"
+   SmtpMail.Send(objMail)
+ Else
+   lblResponse.Text = "Please enter an email address."
+ End If
+End Sub
+
+</script>
+<html>
+<head>
+<style>
+.main {font-family:Verdana; font-size:12px;}
+.title {font-family:Verdana; font-size:18px; font-weight:bold;}
+</style>
+</head>
+<body>
+<span class="title" align="center">Send email from
+an ASP.NET page</span>
+
+<br><br><asp:Label class="main" id="lblResponse"
+runat="server"/>
+
+<form method="POST" name="MainForm" runat="server">
+<table>
+ <tr>
+   <td class="main" align="right">Email:</td>
+   <td class="main"><input type="text"
+   class="main" name="Email" value=""></td>
+ </tr>
+ <tr>
+   <td class="main" align="right">
+   Subject:</td>
+   <td class="main"><input type="text"
+   class="main" name="Subject" value=""></td>
+ </tr>
+ <tr>
+   <td class="main" align="right"
+   valign="top">Message:</td>
+   <td class="main"><textarea name="Message"
+   cols="50" rows="8"></textarea></td>
+ </tr>
+
+
+ <tr>
+   <td class="main">&nbsp;</td>
+   <td class="main"><input type="Submit"
+   id="btnSubmit" OnServerClick="btn_Click" value="Send"
+   runat="server" /></td>
+ </tr>
+</table>
+</form>
+</body>
+</html>
+

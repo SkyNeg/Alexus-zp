@@ -1,0 +1,20 @@
+<?
+
+//define the path as relative
+$path = "C:/HSphere.NET/3rdparty/PHP/";
+
+//using the opendir function
+$dir_handle = @opendir($path) or die("Unable to open $path");
+
+echo "Directory Listing of $path<br/>";
+
+//running the while loop
+while ($file = readdir($dir_handle)) 
+{
+   echo "<a href='$file'>$file</a><br/>";
+}
+
+//closing the directory
+closedir($dir_handle);
+
+?> 

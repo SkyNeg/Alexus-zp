@@ -1,0 +1,94 @@
+<%@ Page Language="C#" %>
+<%@ Import Namespace="System.Web.Mail" %>
+<%@ Import Namespace="System.IO" %>
+
+
+<script language = "javascript">
+	function Tocheck(frmemail)  {
+		if(frmemail.txtFile.value  == "")  {
+		alert("You did not addach file. Still continue...");
+		frmemail.txtFile.focus();
+		return(true);
+		}
+		}
+</script>
+
+<script runat="server">
+
+void btnSubmit_Click(Object sender, EventArgs e) {
+SmtpMail.SmtpServer = "mail.domain.com";
+MailMessage mail = new MailMessage();
+mail.From = txtFrom.Text;
+mail.To = txtTo.Text;
+mail.Subject = txtSubject.Text;
+mail.Body = txtMsg.Text;
+mail.BodyFormat = MailFormat.Html;
+mail.Fields.Add("http://schemas.microsoft.com/cdo/configuration/smtpauthenticate", "1");	//basic authentication
+mail.Fields.Add("http://schemas.microsoft.com/cdo/configuration/sendusername", "user@domain.com"); //set your username here
+mail.Fields.Add("http://schemas.microsoft.com/cdo/configuration/sendpassword", "password");	//set your password here
+string strdir = "D:\\My Data\\web\\lexus-zp.pp.ua\\asp.net\\temp\\";
+
+string strfilename = Path.GetFileName(txtFile.PostedFile.FileName);
+
+txtFile.PostedFile.SaveAs(strdir+strfilename);
+
+mail.Attachments.Add(new MailAttachment(strdir+strfilename));
+
+try
+{ 
+SmtpMail.Send(mail); 
+} 
+catch(Exception ex)
+{
+Response.Write("<b>Exception Occured:</b>   " +ex);
+}
+finally
+{
+Response.Write("Your E-mail has been sent sucessfully");
+}
+
+// Uploaded file deleted after sending e-mail
+
+File.Delete(strdir+strfilename);
+}
+
+</script>    
+
+
+
+
+<html>
+
+<head>
+<meta http-equiv="Content-Language" content="en-us">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>Using ASP.NET To Send Email - Part 2</title>
+</head>
+
+<body>
+
+<div align="center">
+<form id="Form1" method = "post" name = "frmemail" runat = "server" enctype="multipart/form-data" onSubmit = "return Tocheck(this)">
+	<table border="1" width="637" height="196">
+		<tr>
+			<td height="196" width="637" valign="top">
+			
+			From : <asp:TextBox ID = "txtFrom" Runat =server></asp:TextBox>
+			<p>To: <asp:TextBox ID = "txtTo" Runat = server></asp:TextBox>
+			<p>Subject:<asp:TextBox ID = "txtSubject" Runat = server></asp:TextBox>
+
+			<p>Message:<asp:TextBox runat="server" Height="57px" TextMode="MultiLine" Width="212px" ID="txtMsg"></asp:TextBox>
+
+
+			<p>Attach:<input type = "file" id = "txtFile" runat = "server">
+
+
+			<p align="center"><asp:Button Runat = server ID = "btnSubmit" Text = "SEND" OnClick = "btnSubmit_Click"></asp:Button></td>
+		</tr>
+	</table>
+	</form>
+</div>
+
+</body>
+
+</html>

@@ -1,0 +1,11 @@
+I have checked your domain ianspizza.com settings and found that you changed your DNS settings 17-dec-2008. You could see it from this link  http://who.is/whois-com/ip-address/ianspizza.com/ 
+Please note, after changing DNS settings your it is necessary 48 hours until changes could be completely applied. During DNS propagation your site and e-mail accounts could be unavailable.
+
+	MAIL: Wrong DNS settings
+I have cheked your domain  and found that you do not use our name servers. Your current name servers are:
+NS1.MEDIATEMPLE.NET
+NS2.MEDIATEMPLE.NET
+I regret, but you could not use our mail service while you use not ours name servers. To use our name servers, please change DNS settings for your domain to:
+ns7.hostexcellence.com
+ns8.hostexcellence.com
+After 48 hours (that time needs to apply changing in DNS settings) your e-mail will work properly.

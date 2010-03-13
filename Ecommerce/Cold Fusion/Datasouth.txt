@@ -1,0 +1,1 @@
+Please write a ticket with request to create datasouth. You have to provide there type of your database, database name, login and password to database. And this database should be created

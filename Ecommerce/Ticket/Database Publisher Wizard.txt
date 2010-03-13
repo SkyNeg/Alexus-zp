@@ -1,0 +1,16 @@
+You can also use Database Publishing Wizard for restoring/backuping your databases. But please do not forget that in this case local SQL server should be installed on your computer or on remote server where you  trying to backup/move database.
+http://www.microsoft.com/downloads/details.aspx?FamilyId=56E5B1C5-BF17-42E0-A410-371A838E570A&displaylang=en
+
+Install it -> open -> choose source server and database name which will be used to restore another database (server can be local or any remote)->  Select the Publish to Shared hosting provider option -> click more-> in "configuration for new provider" set as web server: https://sqlpub1.ixwebhosting.com.
+User name: publisher
+Password: publisher
+-> click new and point db server, user/pass and dbname for destionation server -> the proceed "Next" and click "Finish".
+
+
+You can use Database Publishing Wizard for restoring/backuping your databases. But please do not forget that in this case local SQL server should be installed on your computer or on remote server where you  trying to backup/move database.
+http://www.microsoft.com/downloads/details.aspx?FamilyId=56E5B1C5-BF17-42E0-A410-371A838E570A&displaylang=en
+
+Install it -> open -> choose source server and database name which will be used to restore another database (server can be local or any remote)->  Select the Publish to Shared hosting provider option -> click more-> in "configuration for new provider" set as web server: https://sqlpub1.ixwebhosting.com.
+User name: publisher
+Password: publisher
+-> click new and point db server, user/pass and dbname for destination server -> the proceed "Next" and click "Finish".

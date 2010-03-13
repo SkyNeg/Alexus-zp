@@ -1,0 +1,33 @@
+http://crm.opentransfer.com/wiki/doku.php/hosting:sphere3:technologies:php?s[]=switching&s[]=between&s[]=php4&s[]=php5
+
+
+
+PHP
+PHP as CGI
+
+With the new control panel 6 PHP works as cgi and not as Apache module as it used to be on the previous CPs. So now all files uploaded through php script will be created with user's ownership username:username and not with httpd:httpd owner. In this case php executes from cgi-bin directory where two files located:
+1) php4-cgi
+2) php5-cgi
+
+Please note that in case a customer deletes the cgi-bin folder from a domain directory there will always be 404 - Not Found error message every time anyone tries to access php scripts stored in the domain folder. Turning Web Service Off/On for a domain name from the control panel will help you to recreate all necessary files and execute .php files correctly after that. Also as an alternative to Web Service restart you may copy necessary files from another cgi-bin directory under another domain name (in case a few domain names are added to the customer's CP).
+Setting php options on linux servers with .htaccess
+
+It's impossible to change values related to php settings (like register_globals, magic_quotes_gpc, etc.) using .htaccess file on CP6 web servers, because php works as cgi and not as apache module. But it's possible to use custom php.ini file, in this case it should be uploaded to domain.com/cgi-bin/ folder so that changes take affect. Here is example of such custom php.ini file. You may download it and use accordingly to customer's needs.
+Switching Between PHP4 and PHP5
+
+If a customer on CP6 wants to have one domain use php5 and one domain use php4 this is easily done in a couple of ways:
+
+a) If a customer is writing his/her own custom scripts, he/she can simply rename their page extensions to .php4 to run as php4 with no other configuration needed.
+
+b) Although the above option is quick and easy, it could be a pain if the customer is using pre-written script or other situations that would make it unfeasible to rename all the scripts extensions. In a case such as this the customer can do the following:
+
+   I) Under Web Options for the domain in the Control Panel, remove the .php extension from the php section. (See Below)
+
+   Also, after removing the .php extension from the php section you must add a mime type in the MIME Type section of Web Options. (See Above)
+
+For the file extentions put .php and for the mime type place application/x-httpd-php4 and click submit. (See Below)
+
+After the server recycles, the customers .php scripts will run as php4. One more thing and everything will be running smoothly. The customer needs to have a custom php.ini file in their cgi-bin folder inside the domain name folder. Please use the example below as a good guideline for a php.ini for php4: (You could also download this from here:)Note you have renamed it from php.txt to php.ini php.txt Updated
+Custom PHP.INI For A Windows Hosting Account
+
+Here is a copy of PHP.INI file for a Windows Hosting Account. You must rename this file to php-cgi-fcgi.ini or php5-cgi-fcgi.ini or php4.ini for PHP4 coding and place it in the Domains root directory for it to work. (This works on all accounts old and new) php4.ini.txt

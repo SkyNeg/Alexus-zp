@@ -1,0 +1,5 @@
+http://wiki.priv/mail:mailing_list_ezmlm
+
+Why do my replies go to the original poster and not the list?
+
+Your mail client probably has a “reply” function as well as a “reply to all” or “reply to list” one; Please use the latter if you want you message to go to the list and not just to the original poster.

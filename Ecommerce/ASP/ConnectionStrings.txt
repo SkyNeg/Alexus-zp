@@ -1,0 +1,6 @@
+﻿ASP.NET + Mysql
+<add name="MyConnectionString" connectionString="Server=mysql510.ixwebhosting.com;Port=3306;Database=C243215_oetcdb;Uid=C243215_oetcuser;Pwd=Oetcdb123;pooling=false;" providerName="MySql.Data.MySqlClient"  />
+
+
+ASP.NET + MSSQL (From DNN)
+<add name="SiteSqlServer" connectionString="Data Source=98.130.254.206;Initial Catalog=C244172_imaginefilms;User ID=C244172_newuser;Password=Falcon90" providerName="System.Data.SqlClient" />

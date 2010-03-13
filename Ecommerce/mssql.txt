@@ -1,0 +1,151 @@
+﻿http://www.mssqltips.com/tip.asp?tip=1405
+http://www.mssqltips.com/tip.asp?tip=1024
+
+Steps for transferring database from and to MS SQL Server 2005
+
+   1.You should have SQL Server 2005 installed on your computer, at least Workgroup edition.
+   2.Start “SQL Server Business Intelligence Development Studio” application:
+
+Start → Programs → Microsoft SQL Server 2005 → Server Business Intelligence Development Studio
+
+   1.  In the Development Studio create new project: File → New → Project → Integration Services Project
+   2.      Then in the top menu select Project → SSIS Import and Export Wizard, which you will see on picture below:
+   3.      Click “Next” button and in Data source field select “SQL Native Client”. Enter server name in to “Server name” field. In the authentication section select “Use SQL Server authentication” and enter database login and password for database. Select database from the “Database” dropdown list and click on “Next” button.
+   4.      After that new window should appear, where you should enter info about destination database name and server and click “Next” button:
+   5.      In the new window, which will appear select first option “Copy data from one or more tables or views” and click “Next” button:
+   6.      In the next window select all tables, which need to be transferred from the MSSQL server and click “Next”:
+   7.      Next window show you the list of operations, which will be performed. Click “Finish” button:
+   8.      After that will be performed SSIS package creation:
+   9.      After all operations will be completed click on “Close” button.
+  10.      Now in the “Solution Explorer” window right click on created SSIS package and click on “Execute package” button:
+  11.      Now transfer process will be started:
+  12.      After all transfer operations will be completed, Post Transaction SQL block should be highlighted as green. It means that all operations were completed successfully:
+  13.      For exporting database from local server to remote, use the same steps, but on the first step specify local database server details and on the second step use remote database server details.
+
+
+
+	MAC
+http://www.fekke.com/blog/index.cfm/2007/6/18/Microsoft-SQL-Server-2005-running-on-Mac-OS-X
+
+
+
+
+
+http://products.secureserver.net/products/hosting/PublishingWithDPW.htm
+
+ To Publish Your Database Using the DPW
+
+   1. Launch the Database Publishing Wizard Client. If the welcome screen displays, check the Do not show this starting page again box.
+   2. Click Next.
+
+   3. On the Select Source Server screen, enter the connection information for your local SQL server.
+
+      Note: This is NOT the same information as that used for your hosted server. If you are publishing from an instance of SQL server running on your desktop or local network, you use the Specify server information section. If you are publishing from a remote database, connect via a connection string. For specific connection information, contact the database server owner.
+
+   4. Once you have entered the connection details, click Next. This step brings up the Select Database screen, displaying a list of all databases available on your local server.
+
+      Note: If you do not see the database you want to publish, press Back to return to the Select Source Server page and then return to this page without changing connection details. If this step does not work, contact the server owner for support.
+
+   5. Select the database you want to publish. If your database contains prohibited objects, such as full text catalogs and assemblies, or you do not want to publish all objects, uncheck the Script all objects in the selected database.
+   6. Press Next.
+   7. If you are not publishing all objects, the Choose Objects Type appears.
+            If You Are Not Publishing All Objects
+         1. Select the Object types to be published. You will be able to pick specific objects of each type on later screens.
+
+         2. Click Next. This step brings up the Choose screen for each object type selected (for example, Tables and Views). If you wish to publish all objects of a given type, click Select All.
+
+            Choose Screen
+         3. Once you have selected all objects to be published, press Next to advance. Repeat this step until you reach the Select an Output Location screen.
+   8. The Select an Output Location screen appears.
+
+      Select an Output Location
+   9. Select the Publish to Shared hosting provider option. Select the appropriate Provider and Target Database from the drop down lists.
+  10. If you have not yet configured a connection or need to make a new connection, press More. The Hosting Providers dialog displays.
+
+      Hosting Providers Dialog
+      If You Have Not Configured a Connection
+         1. Press New. The Provider Configuration dialog displays.
+         2. Enter the following values:
+
+            Name:
+                Enter any name to represent the connection to the hosted service. You will enter names for specific databases later.
+            Web Service Address:
+                Enter the URL for the publishing service. The URL can be found in the database information section of your hosting control panel.
+
+                Note: The service requires a secure (HTTPS) connection to protect data. If you attempt to connect using a non-secure connection, the connection will fail and you will be prompted to use a secure connection.
+            User name:
+                Enter your FTP account user name.
+            Password:
+                Enter your FTP account password.
+
+                Note: Checking “Save Password” causes the application to store your password locally. If this is a public or shared machine, this may not be a secure choice.
+
+            Provider Configuration
+         3. To enter a database, press New. This displays the Database dialog.
+         4. Enter the appropriate configuration values. The configuration values can be found in the database information section of your hosting control panel.
+
+            Server Name:
+                Enter the full path to the database server.
+            Database Name:
+                Enter the name of your hosted database.
+
+                Note: The database must be owned by the FTP account entered in the provider configuration. If you have multiple hosting accounts, be sure to use the correct credentials when configuring the Publishing Wizard.
+            User Name:
+                Enter your database user name. This is the same user name used to access the SQL Web Manager.
+            Password:
+                Enter your database password. This is the same password used to access your SQL Web Manager.
+
+                Note: Checking Save Password causes the application to store your password locally. If this is a public or shared machine, this may not be a secure choice.
+
+            Database Dialog
+         5. Click OK to complete the database set-up. Repeat this step for each database you want to configure. If you have multiple databases owned by a single hosting account, they can all be entered under a single hosting provider entry.
+         6. When you have completed entering databases, click OK on the Provider Configuration dialog to return to the Hosting Providers list. You can test your connection settings by pressing Test. This feature validates the connection to the web service but does not test connectivity to the database itself.
+         7. Click OK to return to the Select an Output Location dialog. If the appropriate provider and database are not selected, select them in the drop down lists.
+         8. Click Next to advance to the Select Publishing Options screen. Before this page is displayed, the service validates the configuration settings by connecting to the publishing service and the target database. If a connection cannot be established, an error message displays and the application remains on the Select an Output Location screen.
+  11. The Select Publishing Options page is pre-populated with the appropriate default values. In most cases, these do not need to be modified.
+
+      Drop existing objects in script:
+          If True, the wizard checks if a published object exists in the database and, if found, drops the existing version before publishing.
+
+          Note: Any data contained within dropped objects will be lost.
+          If False, the wizard does not drop existing objects before inserting or modifying their structure. If an object of the type and name specified already exists, the wizard proceeds directly to data insertion. If the object does not exist, it will be created.
+
+          Note: If the target database contains an object of the same name and type but with a different structure (for example, a table with a different number of columns), a publishing error may occur. Certain conditions may not report an error (for example, the database being published contains a table with fewer columns than the existing table). In such cases, the published database will not exactly match the local database.
+      Publish using transaction:
+          If True, the database is published as a single transaction. If an error occurs, all changes are rolled back.
+          If False, published changes are committed as they are published. If an error occurs, the database may be left in a partially published state.
+      Schema qualify:
+          If True, objects are fully schema qualified in the script.
+          If False, only the object name is used. It is recommended this option be True.
+      Script for target database:
+          Specifies the version of the target database. This must match the server version or publish will fail.  The wizard sets this value to the correct version.
+      Types of data to publish:
+          This section specifies what type of information to publish.
+
+              Schema only publishes the structure of objects.
+              Data only populates tables.
+              Schema and data publishes the structure of objects and populates tables.
+
+      Select Publishing Options
+  12. Click Next to advance. This step brings up the Review Summary page, which displays the selected options and configuration. This is the last chance to review before publishing begins.
+
+  13. Click Finish to begin publishing.
+
+    The Database Publishing Progress screen tracks the progress of the publish.  Based on the options selected, the wizard displays some combination of the following steps:
+
+    Gathering List of Objects to script:
+        The wizard is communicating with your local SQL Server and determining what objects must be scripted, including any objects you selected and their dependencies.
+    Connecting to web service:
+        The Wizard is connecting to the web service and establishing a publishing session.
+    Scripting objects:
+        The Wizard is performing preliminary scripting of the objects to be published.
+    Processing:
+        The wizard is completing local scripting of an object and transmitting it to the Web service. The Web service is executing the script against your hosted database server. The status message updates based on the specific object being published at a given instance.
+
+    Database Publishing Progress
+
+    The amount of time to publish a database varies based on complexity of the database, number of objects, and the amount of data in tables. Most databases complete publishing in under 30 minutes.
+
+    It is possible to abort processing at any point by pressing Stop. If an error occurs, a red link to more details is provided in the Message column. If publishing is aborted or an error occurs, you can use Back to move back through the screens and modify settings.
+
+    If publishing succeeds, press Close to close the application. Your database is now transferred to the hosting server and ready for use.

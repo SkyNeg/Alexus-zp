@@ -1,0 +1,14 @@
+<?php
+
+$email = “example@example.com”; $headers .= “From: Example <$email>\n”;
+$headers .= “Reply-To: $email\n”;
+$headers .= “MIME-Version: 1.0\n”;
+$headers .= “Content-Type: text/html; charset=iso-8859-1\n”;
+$headers .= “X-Priority: 1\n”;
+$headers .= “X-Mailer: PHP / ”.phpversion().”\n”;
+$headers .= “Return-Path: <$email>\n”;
+$subject = “Subject Here”;
+ini_set('sendmail_from', 'user@domain.com');
+mail(“$email”,”$subject”,”This is a test email from your hosting company to ensure your email is working properly. Please disregard this email.”, $headers);
+echo “Email sent to $email”;
+?>

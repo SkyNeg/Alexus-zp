@@ -1,0 +1,4 @@
+1. Message will not be accepted by mailserver if total number of recipients, listed in To, Carbon Copy and Blind Carbon Copy fields exceeds 25 
+2. By default, it is allowed to send up to 300 messages per day. Further messages will be dropped without any notification (mailserver will issue afformative reply, but message will be dropped);
+3. By default, it is allowed to send up to 5000 messages per month. Further messages will be dropped without any notification (mailserver will issue afformative reply, but message will be dropped);
+4. By default, it is allowed to send up to 200 total messages per hour per domain. Further messages will be queued to be sent out in subsequent hours.

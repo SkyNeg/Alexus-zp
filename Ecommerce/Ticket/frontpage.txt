@@ -1,0 +1,12 @@
+﻿To get rid of the issue please follow these steps:
+
+Log into your account control panel
+Click on Manage for the Hosting Account that contains the domain name that you are working with.
+Scroll down half way if necessary to click on the Frontpage icon
+Click on the small Edit icon for the domain you are working with
+In the second table, there are two boxes near the bottom of the settings page that should contain email addresses.
+In both boxes please type in the exact email address that the contact form is supposed to go to.
+Now you will click the Submit button and republish with Frontpage.
+
+
+Migration to Expression web: http://www.pixelmill.com/support/support_list.aspx?ParentListID=al1095

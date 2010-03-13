@@ -1,0 +1,17 @@
+Hello,
+
+First of all let me pleas inform you, that full text indexing is enabled on all our servers. To set full text indexing for the direct table and field we need to make your request clear, please provide us with the following information:
+1. databasename - vishwai_JobDB
+2. tablename - fld_recrequirement
+3. fields to search: fld_jobname
+4. extra fields you may need:
+unique key
+Also you should be able to use this functionality on your site. So please use sp_fulltext_database stored procedure, And then use other sp_fulltext_… stored procedures to manipulate indexes. Please refer to the following articles for more information:
+http://msdn.microsoft.com/en-us/library/ms142547.aspx
+http://www.asp.net/Learn/sql-videos/video-115.aspx
+Kindly please give it a try and let us know if you need further assistance.
+
+Kind regards,
+Kirill Skripka
+Technical Support 
+24/7 Live Chat

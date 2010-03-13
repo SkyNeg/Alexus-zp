@@ -1,0 +1,34 @@
+<?php
+
+$link = mysql_connect('localhost', 'mysql_user', 'mysql_password');
+if (!$link) {
+    die('Not connected : ' . mysql_error());
+}
+
+// make foo the current db
+$db_selected = mysql_select_db('foo', $link);
+if (!$db_selected) {
+    die ('Can\'t use foo : ' . mysql_error());
+}
+else echo "All is fine";
+?>
+
+cd /hsphere/local/home/shulanhost/learnmandarinchinesenow.com/awstats/cgi-bin/; /usr/bin/perl /hsphere/local/home/shulanhost/learnmandarinchinesenow.com/awstats/cgi-bin/awstats.pl -update -config=learnmandarinchinesenow.com
+
+
+<%
+
+
+' For help setting your database connection, please go to the following URL
+' http://www.ecommercetemplates.com/help/ecommplus/faq.asp#faq8
+' IMPORTANT ! ! After setting your database connection you MUST MAKE SURE THE DATABASE CANNOT BE DOWNLOADED
+' Failure to do this will mean someone could get hold of your site admin username and password.
+' More details about this are available here http://www.ecommercetemplates.com/help/checklist.asp#asp
+
+sDSN = "Provider=Microsoft.Jet.OLEDB.4.0;Data Source=" & Server.MapPath("perfectlittlestitches.com/fpdb/ziggy.mdb") ' Microsoft Access 2000 using mapped path
+'sDSN = "Provider=Microsoft.Jet.OLEDB.4.0;Data Source=c:\inetpub\wwwroot\fpdb\ziggy.mdb;" ' Microsoft Access 2000
+
+' Please note, for SQL Server you must have an SQL Server database available. Most people will want to use the Access database provided.
+'sDSN = "driver={SQL Server};server=SERVERNAME;uid=USERNAME;pwd=PASSWORD;database=DATABASENAME" ' SQL Server
+%>
+

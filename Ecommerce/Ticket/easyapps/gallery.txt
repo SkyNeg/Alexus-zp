@@ -1,0 +1,4 @@
+create albums directory under g2data
+create versions.dat under g2data
+1.2.0.6
+2.2.4

@@ -1,0 +1,75 @@
+(5:29:03) Arthur_Torture: *
+      The domain has been with the current registrar for at least 60 days
+    *
+      You have agreed to an additional year of registration
+    *
+      The domain must be unlocked with your current registrar
+    *
+      If you are transferring a .org .com .net or .info domain, you must request an authorization code from your current registrar
+
+Soon, you will receive an email, at the administrative contact e-mail you have on file for this domain, confirming for your permission to transfer. Please follow the directions within that e-mail to complete the process. The transfer can take up to two weeks and our billing department will inform you when the process has begun.
+(5:47:45) Arthur_Torture: It's not a good idea to use objcheck.asp script to check iis server performance. This script will not show the actual state of the server as it is designed to check the components installed on the server and uses remote list of well known components, and it wouldn't work if remote 
+site is inaccessible, that's why it can't be used to check if asp works on the server or not.
+Instead it is recommended to use the following test scripts which are installed on each iis server:
+testadodb.asp - test ASP script which uses ADOdb connection
+test_asp.aspx - test ASP.NET script without database access
+testoledb.aspx - test ASP.NET script which uses OLEdb connection
+
+examples:
+
+$ time curl -I http://iis407.opentransfer.com/testadodb.asp
+HTTP/1.1 200 OK
+Date: Mon, 05 May 2008 19:13:03 GMT
+Server: Microsoft-IIS/6.0
+MicrosoftOfficeWebServer: 5.0_Pub
+X-Powered-By: ASP.NET
+Content-Length: 16934
+Content-Type: text/html
+Set-Cookie: ASPSESSIONIDCCCRQSCT=MKIHIDOCABDJLGBOGFCJAPPE; path=/
+Cache-control: private
+
+
+real    0m1.059s
+user    0m0.008s
+sys     0m0.000s
+
+$ time curl -I http://iis502.ixwebhosting.com/test_asp.aspx
+HTTP/1.1 200 OK
+Server: Microsoft-IIS/5.0
+Date: Mon, 05 May 2008 19:13:21 GMT
+X-Powered-By: ASP.NET
+Micr
+
+
+
+mssql server:
+<html>
+<title>Queries from the MS-SQL database with ASP</title>
+<body bgcolor="FFFFFF">
+<h2>Query from table <b>products</b> with ASP</h2>
+
+<%
+
+Set conn = Server.CreateObject("ADODB.Connection")
+conn.open "Provider=SQLNCLI;Server=mssql501.opentransfer.com;Database=owgcjua_MyESAdmin;Uid=owgcjua_MyES01;Pwd=Mikaela88;"
+
+'This code block will create a recordset
+Set rs = Server.CreateObject("ADODB.Recordset")
+SQL = "select * from News"
+rs.open SQL, conn
+
+'will iterate to display the records got from the database
+While Not rs.EOF
+  response.write(rs("id") & " " & rs("objectid"))
+  rs.MoveNext
+Wend
+
+'closes the connection
+rs.close
+conn.close
+Set rs = Nothing
+Set conn = Nothing
+
+%>
+</body>
+</html>

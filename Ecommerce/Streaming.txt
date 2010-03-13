@@ -1,0 +1,2 @@
+We allow certain types of streaming that are called progressive streaming. 
+These types of streaming are basically pre-composed files that can be downloaded while playing through some of the more major media players (i.e. Windows Media Player, Real Player and Win Amp).

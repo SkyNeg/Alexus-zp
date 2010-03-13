@@ -1,0 +1,3 @@
+Stored procedures - do not sopport
+mysqli - we support it where we have php5 installed
+

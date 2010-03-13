@@ -1,0 +1,150 @@
+Please compare your mail client settings with the following data:
+1) Username: chris@tapestrymediaandevents.com
+2) Password: xxxxxx
+3) POP3 (Port 110) : mail.tapestrymediaandevents.com
+4) SMTP (Port 25) : mail.tapestrymediaandevents.com
+5) SPA (Secure Password Authentication): should NOT be checked.
+6) My server requires Authentication: should NOT be checked
+7) Increase the connection time out to 5 mins from accounts properties,
+8) Also increase your Send/Receive time to at least 5 mins.
+9) Make sure you don't use firewall and your ISP don't block connection
+
+Dear ,
+
+Please compare your mail client settings with the following data:
+1) POP3 login: user@ajdesignz.com
+2) POP3 Password: xxxxxx
+3) POP3 Port 110 : mail.ajdesignz.com
+4) SMTP login: user@ajdesignz.com
+5) SMTP Password the same as for POP3
+6) SMTP 25 : mail.ajdesignz.com
+7) SPA (Secure Password Authentication): should NOT be checked.
+8) My server requires Authentication: should be checked
+9) Make sure you don't use firewall and your ISP don't block connection
+
+If you still cannot send mails, please provide us the name of the mail account in trouble and do the following on your local pc:
+Start-> Run-> type there:cmd-> type in the popup window:
+telnet mail.iamngri.com  25
+click enter And review the output you get. If you receive something like "Could not open connection to host:connect failed", etc. - such telnet answer means something from your end is blocking the connection to our mailserver through 25 SMTP port. Because there are no any problems from our server end:
+$ telnet mail.iamngri.com 25
+Trying 76.162.254.2...
+Connected to mail.iamngri.com (76.162.254.2).
+Escape character is '^]'.
+220 mail2.opentransfer.com ESMTP
+
+The reason can be any antivirus/firewall software installed on your PC or your ISP.
+In first case please try to disable it and recheck using our mailservice once again. If the problem is in your ISP - please contact them regarding your issue and ask to give you an alternative SMTP server details, so you could use them for configuration of your outgoing mailserver without any problems. 
+
+Should you have any further question feel free to contact us and we will be glad to assist you. 
+
+Kind regards,
+Kirill Skripka
+Technical Support 
+24/7 Live Chat
+
+
+
+POP before SMTP
+Regarding the error message you got(553 sorry, that domain isn't allowed to be relayed through this MTA (#5.7.1), As you are using POP before SMTP protocol, so you always need to click on send/receive button before sending any mails, then you won’t get this error message. I.e., please receive mails before sending a new mail. To get rid of this problem permanently you can ask customer to set up his email client to check for incoming mails every 5 minutes. For more information please refer to http://www.ixwebhosting.com/index.php/v2/pages.manual9#q8b.
+
+1) Username: user@yohefamily.com
+2) Password: xxxxxx
+3) IMAP (Port 143) : mail.yohefamily.com
+4) SPA (Secure Password Authentication): should NOT be checked. (that means you should not use SSL or any secure connection in settings) 
+
+
+MX record Priority 0 is highiest!!!
+1) POP (Port 110) or IMAP (Port 143): mail.dermatend.com
+2) Username for POP or IMAP server: user@dermatend.com
+3) Password: xxxxxx
+4) SMTP (Port 25) : mail.dermatend.com
+5) My SMTP server requires Authentication: should be checked
+6) Username for SMTP server: user@dermatend.com
+7) Password: xxxxxx
+8) SPA (Secure Password Authentication): should NOT be checked.
+9) Make sure you don't use firewall and your ISP don't block connection
+
+
+Hello all,
+
+As you already know we will be adding on an 'username and password' authentication to our mail  
+servers, for outgoing mail. Recently we have sent a newsletter with details of the mentioned  
+implementation to our customers(attached) As you may also know our admins will implement  
+the changes to our mail servers on June 15, 2009, but the mail reads like the change is  
+immediate - there is no reference to June 15th. Be aware about this.
+
+
+You may use the following templates 
+For chats:
+
+At the moment we have received an information that some of our customers have already changed those settings and as result they have got error message - "Autentification failed". We would like to aware you of the following changes before exact implementation of the authentication to our mail servers, which take place on June 15. Also we would like to confirm that we are not moving away from 'pop before smtp' authentication, we are adding an additional choice of authentication (username and password) for our customers. If you do not want to use 'username and password' authentication you may leave your mail client without changes.
+
+
+For  tickets:
+
+Let me please inform you about details of the announced adding on an 'username and password' authentication to our mail servers for outgoing mail. As part of our on-going effort to combat unwanted SPAM, weare updating our mail servers to utilize a different type of authentication method to prevent this from occurring. We have sent a newsletter with details of the mentioned implementation so you will be able to find all settings needed. Please make sure that you have received this information and checked all details.
+At the moment we have received an information that some of our customers have already changed those settings and as result they have got error message - "Autentification failed". We would like to aware you of the following changes before exact implementation of the authentication to our mail servers, which take place on June 15. Also we would like to confirm that we are not moving away from 'pop before smtp' authentication, we are adding an additional choice of authentication (username and password) for our customers. If you do not want to use 'username and password' authentication you may leave your mail client without changes.
+
+
+
+
+This is a forwarded message
+From: IX Web Hosting <info@ixwebhosting.com>
+To: roman.rott@ecommerce.com
+Date: Friday, June 12, 2009, 5:55:18 PM
+Subject: Email Authentication Change
+
+===8<==============Original message text===============
+ 
+
+
+
+
+Dear Roman, 
+
+Recently, some spammers have found a way of sending SPAM email through our servers, bypassing portions of our anti-SPAM protective measures. As part of our on-going effort to combat unwanted SPAM, we are updating our mail servers to utilize a different type of authentication method to prevent this from occurring. 
+Specifically, we are updating the way our mail servers handle outgoing email. We will still offer "pop before smtp" authentication for outgoing mail, but we will now be providing 'username and password' authentication as well. To utilize this new authentication method for outgoing mail, please follow these instructions:
+Thunderbird 
+1.	Select 'Account Settings' under the 'Tools' section
+2.	Select 'Outgoing Server (SMTP)'
+3.	Highlight the mail server, from the list, and select 'Edit'
+4.	Check the box next to 'Use name and password'
+5.	Type the full email address associated with the account you are trying to send from
+6.	Select 'OK'
+Outlook 2007 
+1.	Select 'Account Settings' under the 'Tools' section
+2.	Highlight the email address that you are changing the settings for and click 'Edit'
+3.	At the bottom of the page, select 'Manually configure server settings or additional server types', and then click 'Next'
+4.	On the 'Choose E-mail Service' page, select 'Internet E-mail', and then click Next.
+5.	In the 'Internet E-mail Settings' window, go to the 'Outgoing Server' tab. Check 'My outgoing server (SMTP) requires authentication' and select 'Use Username and Password'.
+6.	Type the full email address associated with the account you are trying to send from and the password associated with that email address.
+7.	Select 'OK'
+If you are having any issues with these settings, or if you need help setting up a different client, please do not hesitate to contact our support team. We are available 24/7, via live chat, ticket, or phone. 
+Amanda Walsh
+Department of Customer Relations
+www.ixwebhosting.com 
+
+Outlook Express:
+1. Select 'Accounts' under the 'Tools' section 
+2. Select your account and click on "Properties" button
+3. Go to "Servers" tab
+4. Find Outgoing mail server and check "My servers requires authentication"
+5. Click on Settings button
+6. Choose "Log on using" option and Type the full email address associated with the account you are trying to send from and the password associated with that email address.
+7.	Select 'OK'
+Filters:
+Also please note that there is antispam markup tool running on your mailserver, SpamAssassin. To use benefits of server-side filtration, you may need to configure your email client (Outlook, Thunderbird, Eudora etc) to delete or drop to junk mail folder all the messages, which they contain sentence "X-Spam-Status: Yes" in the headers section. As more strict rule, you may use "X-Spam-Level: **". 
+
+You can use webmail to add your own Spam Filter to block such emails or you can add a "Delivery message rules" to block such emails.
+
+Check for "Delivery rule" in Outlook inline help. It should give you step-by-step instructions how to configure delivery rules. In rules section, you will need to define "indication" (Header X-Spam-Status: Yes) and rule (Move to trashbin)
+
+You may find detailed info on how to add delivery rules in MS Outlook at http://office.microsoft.com/en-us/assistance/HP010524761033.aspx
+
+
+1) Username: afarnsworth@securityforceinc.com
+2) Password: xxxxxx
+3) POP (Port 110) : mail505.opentransfer.com
+4) SMTP (Port 25) : mail505.opentransfer.com
+5) SPA (Secure Password Authentication): should NOT be checked.
+6) My SMTP server requires Authentication: should be checked

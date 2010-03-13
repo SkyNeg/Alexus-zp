@@ -1,0 +1,28 @@
+1. Login into your account panel using your login e-mail and password.
+2. Go to My products.
+3. Click Manage button near your hosting plan icon (You will be redirected to your control panel)
+4. In the control panel, please find "File Manager" icon and click on it. Web based FTP will opens.
+5. Enter your domain folder jesseinchina.com
+6. To upload your files click Upload button and select files that you want to upload from your local PC. 
+
+
+You may change permissions using any FTP client:
+ftp-file-permissions.php" target="_blank">http://www.stadtaus.com/en/tutorials/chmod-ftp-file-permissions.php
+
+or
+
+Via FileManager (Webshell) from your hosting control panel:
+So for example you want to change permissions for folder:
+1. Launch Webshell
+2. Click on “folder” icon near folder name with which you want to to change permissions
+3. Now you will see a heading in the information window “Access Permissions” with 9 check boxes below it. Also you may see there:
+Permissions: read write exec
+and
+User group: user group other
+4. And now you may to to change permissions for each user groups
+775 permissions means:
+read for user, group, other
+write only for user
+exec for user, group, other
+5. Then you need click on button "Change"
+Done.

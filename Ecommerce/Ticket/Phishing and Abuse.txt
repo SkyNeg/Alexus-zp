@@ -1,0 +1,274 @@
+Abuse Complaints
+
+A TOS violations will only accumulate if they are within 12 months of each infraction. If 2 or more infractions happen within (10) day period of each other, and is for the same infraction, it counts as 1 violation.
+
+It is a TOS violation only if the subject line of the ticket says TOS Violation.
+Procedure
+
+If you are dealing with an outdated software issue (such as phpbb, joomla, wordpress, ect), please follow these steps Outdated Software Procedure
+
+SA Steps
+
+   1.
+      Perform any steps necessary to prevent a customer from continuing to abuse our services. Use your own judgment and the steps needed will depend on the type of abuse. Consult a higher level SA that is online if you have any questions. Examples:
+          *
+            Server is low on disk space ? Delete any copyrighted content to free up space.
+          *
+            Server is overloaded by network traffic ? Add rules to /firewall/firewall.local to block the traffic.
+          *
+            Server is overloaded by a website/program ? Kill the processes and chmod the customer's directory.
+   2.
+      Locate the customer's account using GHCP.
+   3.
+      Click on the Create Ticket link.
+   4.
+      Fill in the ticket subject and description with an appropriate template from the list below.
+   5.
+      Put any relevant info into the notes section. You MUST include details on what you did during Step 1.
+   6.
+      Set the ticket as Technical, On Hold and to ToS1).
+
+CR Steps
+
+   1.
+      Update the customer notes. It is the responsibility of the first CR that picks up the ticket to update the Customer Notes area. The Customer Notes should have: ticket number, type of infraction, the number of the violation.
+   2.
+      Place a call to the customer, to explain the violation and how to resolve the issue. Please make sure you are calling between 8am - 8pm the customer's time zone.
+          *
+            If the violation is in regards to an overload and we have removed permissions to the database or firewalled the domain, there is no need to call. Set the ticket to waiting. It will be up to the customer to contact us to resolve this matter.
+          *
+            When dealing with Spam TOS violations check the message to see if it meets the four government requirements found here. If it meets these requirements, the message is not Spam.
+                o
+                  The email's “From,” “To,” and routing information – including the originating domain name and email address – must be accurate and identify the person who initiated the email.
+                o
+                  The subject line cannot mislead the recipient about the contents or subject matter of the message.
+                o
+                  You must provide a return email address or another Internet-based response mechanism (like an unsubscribe link) that allows a recipient to ask you not to send future email messages to that email address, and you must honor the requests. Please note that having an unsubscribe link is not enough, the unsubscribe requests must be honored.
+                o
+                  Commercial email must be identified as an advertisement and include the sender's valid physical postal address. Your message must contain clear and conspicuous notice that the message is an advertisement or solicitation and that the recipient can opt out of receiving more commercial email from you. It also must include your valid physical postal address.
+   3.
+      Make sure to modify the time period remaining for them to respond when updating the template by subtracting the time period customer has left to take action on the TOS issue. If the customer has made arrangements or has requested an extension please note this in the ticket notes if the time period has been extended.
+   4.
+      Update the ticket with any necessary notes. It is also helpful to have in the ticket notes area if there is more than one TOS on a customer account to place all the ticket numbers, dates and violations. This will help us out to be able to then monitor if there is a pattern or maybe further investigation needs to be done into customer account to see if there is a shell script if pertaining to phishing.
+          *
+            For all other issues, we have attempted to contact the customer for 3 days. If we cannot get in contact with him and the violation is not an overload, suspend the account and set the ticket to waiting. It will be up to the customer to contact us to resolve this matter..
+          *
+            If the customer has violated the terms of service twice add the following to your ticket update:
+
+“Please note that this is the second time within 12 months you have violated our TOS. Unfortunately, we have to bring this to your attention that as per our Terms of Service a third instance may result in immediate account termination without notice. If this occurs, no backups will be provided. If you have any questions about how to avoid this from happening again our support team will be glad to advise.”
+Three Strikes and You Are Out
+
+In the event a customer’s account receives three complaints of the same nature the account may be suspended after evaluation by two members of Ecommerce Executive Management. In some cases, especially with phishing, it is in our best interests to work with the customer to keep it from repeating instead of permanently suspending the customer. After evaluating, if the managers decide to permanently suspend, a manager should update the modify notes with the reason for suspension “persistent tos violator” and possibly update these notes with the violation ticket numbers. The following template should be sent to the customer by the manager or the representative handling the ticket:
+Account Suspension- TOS Violations
+
+As per our records your account has violated our terms of service three times already. We have been trying to work with you to permanently resolve the situation, but unfortunately the actions taken were not persistent. Due to security reasons and our obligation to provide stable services towards other customers hosted on the same server, we regret to inform you that we cannot reenable your account. We will be unable to provide you with a back up of any content on our servers. If you have any further questions regarding this issue or our hosting services in general, please do not hesitate let us know.
+Templates
+Spam
+
+We have been notified of an e-mail spam complaint generated from an e-mail address on your account. In most cases, our customers do not intend to send spam. When we receive these complaints, it is important that we investigate the claim, and then ensure that you know the guidelines for what makes a commercial e-mail qualify as spam, and receive your assurance that you will not send any Spam from your account.
+
+To make sure that your e-mail does not qualify as spam, please view the governmental guidelines here:
+
+http://www.ftc.gov/bcp/edu/pubs/business/ecommerce/bus61.shtm
+
+Please understand that we must maintain a strict policy against spam, and your cooperation protects not only you and your account, but all of the mail accounts hosted on your mail server, from becoming blacklisted. If your mail server were to become blacklisted, all of the customers using that server would be blocked from sending mail, as it would all be considered potential spam.
+
+If you determine that you did not send this mail, please change all of your e-mail and control panel passwords. You will also want to scan your local computer(s) with an updated virus filtering software (like AVG or Avast) and check the security of the network that most of your mail originates from. You may also want to check your website's files and code for potential security vulnerabilities.
+
+Please respond to this ticket letting us know of your intention to stop sending any spam, whether it is intentional or not. You must agree to our request for compliance within XX hours or your account will become suspended. We do not want that to happen, so please respond to this message by logging into your control panel with us, and accessing this ticket via the 24/7 help desk, or provide this ticket number to our Live Chat or phone representatives.
+
+We appreciate your cooperation in this matter and thank you for your time.
+Status
+
+    *
+      technical 'on hold' ToS
+
+Phishing
+1st and 2nd Violations
+
+We have received notification of phishing material in your account. Phishing files are usually placed through some type of exploit of out dated code, weak file and folder permissions. Packaged shopping carts and photo galleries are usual sources as hackers find exploits and developers fix them almost daily, so unless you constantly update the software or completely secure it things like this can happen.
+
+You must agree to remove this content and update any software that has resulted in security holes. Per our terms of service, on your 3rd terms of service violation, your account will be terminated. We would like to work with you to prevent your account reaching this limit.
+
+To protect your account from further action you must agree to our request for compliance. Please respond to this message letting us know how you intend to correct this issue. You may either log into your control panel with us, and access this ticket via the 24/7 help desk, or provide this ticket number to our Live Chat or phone representatives. Failure to respond to this message within XX hours will result in the suspension of the affected account with us until such a time as this matter is resolved.
+Status
+
+    *
+      technical 'on hold' TOS
+
+**SECURITY COMPANY PHISHING COMPLAINTS**
+
+PHISHING REDIRECTION ISSUE
+
+SECURITY AGENT SIDE:
+
+    *
+      Dear Security Agent,
+
+Thank you for bringing this security issue to our attention. We highly value both the security and the integrity of our servers. As such, we have done everything in our power to handle the issue for you. The pathway to the phishing redirection content has been disabled, and our customer has been notified of the problem, and will be dealt with accordingly. If you have any questions or concerns you may please contact IX Web Hosting 24/7 at +1- 614-534-1961 or toll free at 1-800-385-0450 (if within the US).
+
+    *
+      Sincerely,
+    *
+      Representative Name
+    *
+      IX WebHosting Tech
+    *
+      HostExcellence Tech
+
+OUR SIDE:Path to phishing material redirect disabled. Since it was in the coding, had to disable the site via chmod. There was no site except an index list.
+
+    *
+      INSERT PATH THAT LINKS TO THE TICKET IN HSPHERE
+
+Example: https://ghcp.ecommerce.com/index.php/helpdeskticket.dspFrmTicketModify/hd_ticketid/809712
+
+    *
+      This link opens an example ticket. You must be logged into GHCP first before clicking this link.
+    *
+      RESOLVE THESE TICKETS to GENERAL POOL
+
+    *
+      If this is a HostExcellence call, please use the following line at the end instead: If you have any questions or concerns you may please contact HostExcellence 24/7 at +1-614-534-1962 or toll free at 1-800-792-1197(if within the US).
+
+PHISHING ISSUES:
+
+Example Issue:Ticket #809696
+
+SECURITY AGENT SIDE:
+
+    *
+      Dear Security Agent,
+
+Thank you for bringing this security issue to our attention. We highly value both the security and the integrity of our servers. As such, we have done everything in our power to handle the issue for you. The pathway to the phishing redirection content has been disabled, and our customer has been notified of the problem, and will be dealt with accordingly. If you have any questions or concerns you may please contact IX Web Hosting 24/7 at +1- 614-534-1961 or toll free at 1-800-385-0450 (if within the US).
+
+    *
+      Sincerely,
+    *
+      Representative Name
+    *
+      IX WebHosting Tech
+    *
+      HostExcellence Tech
+
+OUR SIDE: Path to phishing material disabled. Disabled the site via chmod.
+
+    *
+      INSERT PATH THAT LINKS TO THE TICKET IN HSPHERE Example: This link opens an example ticket. You must be logged into GHCP first before clicking this link.
+
+    *
+      RESOLVE THESE TICKETS to GENERAL POOL
+    *
+      If this is a HostExcellence call, please use the following line at the end instead: If you have any questions or concerns you may please contact HostExcellence 24/7 at +1-614-534-1962 or toll free at 1-800-792-1197(if within the US).
+
+Copyright
+
+Procedure for determining if a complaint is legal can be found here. This issue can be handled by CR and should not be sent to the company lawyer.
+Copyright Templates
+Response to Complainant If We Have NOT Been Provided With a DMCA Compliant Complaint Letter
+
+In order for us to take action on infringements of copyright, we must first receive a Digital Millennium Copyright Act (DMCA) compliant complaint. Please respond to this ticket by attaching a DMCA compliant complaint with this information:
+
+1. A physical or electronic signature of the copyright owner, or a person authorized to act on behalf of the owner, of an exclusive copyright that has allegedly been infringed.
+
+2. Identification of the copyrighted work claimed to have been infringed, or, if multiple copyrighted works at a single online site is covered by a single notification, a representative list of such works on that site.
+
+3. Identification of the material that is claimed to be infringing or to be the subject of infringing activity and that is to be removed or access to which is to be disabled, and information reasonably sufficient to permit Ecommerce.com to locate the material.
+
+4. Information reasonably sufficient to permit Ecommerce.com to contact the Complaining Party, such as an address, telephone number, and, if available, an electronic mail address at which the Complaining Party may be contacted.
+
+5. A statement that the Complaining Party has a good faith belief that use of the material in the manner complained of is not authorized by the copyright owner, its agent, or the law.
+
+6. A statement that the information in the notification is accurate, and under penalty of perjury, that the Complaining Party is the owner, or is authorized to act on behalf of the owner, of an exclusive right that is allegedly infringed.
+
+Once you have supplied this information, we will be able to take action on your legal request. If you have any questions, please feel free to update this ticket.
+Response to Complainant If We HAVE Been Provided With a DMCA Compliant Complaint Letter
+
+Only use this template if we have been supplied with a legal DMCA compliant complaint that contains ALL of the necessary information.  
+You MUST change all form fields indicated in bold.
+
+Re: notices from NAME OF COMPLAINANT (PERSON OR COMPANY) regarding urls: LIST URLS THEY PROVIDED TO US
+
+Dear NAME,
+
+I have reviewed the above-referenced notices to Ecommerce, Inc. (“EC”) regarding its demands that EC stop hosting the above-referenced websites because COMPANY states that they are infringing COMPANY’s intellectual property rights by using copyrighted content without permission from the copyright holder. We will comply with its request(s) and suspend the websites.
+
+If you have any further questions or if EC can be of any further assistance, please do not hesitate to contact our legal department at 800.861.9394 extension 4316.
+Ticket Template When Contacting A Customer In Response To A Valid DMCA Compliant Complaint Against Them
+Domain name is NOT part of the complaint
+
+Your account has been found to contain copyrighted material without the permission of the copyright holder, which is in violation of our Terms of Service. We have received a Digital Millennium Copyright Act (DMCA) compliant complaint and have suspended the account until you agree to remove this content from your website. So that your account can be re-activated, you must agree to our request for compliance. Please respond to this message stating your intent to do so. You may either log into your control panel with us, and access this ticket via the 24/7 help desk, or provide this ticket number to our Live Chat or phone representatives.
+
+Once we receive your response we will re-enable the account for 24 hours during which time you must remove the content immediately. If, at the end of 24 hours, the content is still present, we will have to permanently suspend your account.
+
+Examples of the content that must be removed are provided below. Please note that you must remove all content that violates copyright and these links are provided only as examples:
+
+INDICATE URLS PROVIDED IN COMPLAINT LETTER AND BE SURE TO INDICATE WHAT IT IS ABOUT THE LINKS THAT IS IN VIOLATION
+Domain name IS part of the complaint
+
+Your account, including at least one registered domain, has been found to contain copyrighted material without the permission of the copyright holder, which is in violation of our Terms of Service. We have received a Digital Millennium Copyright Act (DMCA) compliant complaint and have suspended the account until you agree to remove this domain from your hosting account. You must also agree that, if the domain name is registered with us, that it be removed from your control panel. No access nor refund will be provided for the domain name registration(s). So that your account can be re-activated, you must agree to our request for compliance. Please respond to this message stating your intent to do so. You may either log into your control panel with us, and access this ticket via the 24/7 help desk, or provide this ticket number to our Live Chat or phone representatives.
+
+Once we receive your response we will re-enable the account for 24 hours during which time you must remove the content immediately. If, at the end of 24 hours, the content is still present, we will have to permanently suspend your account.
+
+Examples of the content that must be removed are provided below. Please note that you must remove all content that violates copyright and these links are provided only as examples:
+
+INDICATE DOMAINS AND URLS PROVIDED IN COMPLAINT LETTER AND BE SURE TO INDICATE WHAT IT IS ABOUT THE LINKS THAT IS IN VIOLATION
+Fair Use
+
+We are notifying you that your account has been found to violate our “Fair-Use” Resource Assignment portion of our Terms of Service, due to the amount of disk usage that is being taken.
+
+We ask that you either reduce disk usage or look for dedicated hosting for this site.
+
+We have a shared hosting environment that we must maintain at a certain level of performance. This performance is monitored and balanced by us, however there are times when accounts can cause the server’s load to increase degrading the performance for all other customers on this server.
+
+To protect your account from further action you must agree to our request for compliance. Please respond to this message stating your intent to do so. You may either log into your control panel with us, and access this ticket via the 24/7 help desk, or provide this ticket number to our Live Chat or phone representatives. Failure to respond to this message within 72 hours will result in the suspension of the affected domain with us until such a time as this matter is resolved.
+Status
+
+    *
+      technical 'on hold' ToS
+
+Status
+
+    *
+      technical 'on hold' ToS
+
+Server Overload - Database
+
+We are notifying you that your account, or a portion or feature of your account has caused an overload on one of our servers. We have a shared hosting environment that we must maintain at a certain level of performance. This performance is monitored and balanced by us, however there are times when accounts can cause the server’s load to increase degrading the performance for all other customers on this server.
+
+To protect your account from further action you must agree to our request for compliance. Please respond to this message stating your intent to do so. You may either log into your control panel with us, and access this ticket via the 24/7 help desk, or provide this ticket number to our Live Chat or phone representatives.
+
+Please contact us to resolve this matter.
+Status
+
+    *
+      technical 'on hold' ToS
+
+Server Overload - Web
+
+We are notifying you that your account, or a portion or feature of your account has caused an overload on one of our servers. We have a shared hosting environment that we must maintain at a certain level of performance. This performance is monitored and balanced by us, however there are times when accounts can cause the server’s load to increase degrading the performance for all other customers on this server.
+
+To protect your account from further action you must agree to our request for compliance. Please respond to this message stating your intent to do so. You may either log into your control panel with us, and access this ticket via the 24/7 help desk, or provide this ticket number to our Live Chat or phone representatives.
+Status
+
+    *
+      technical 'on hold' ToS
+
+TOS Violation - Adult Content
+
+Your account has been found to contain material which is in violation of our Terms of Service. This material must be removed immediately. To protect your account from further action you must agree to our request for compliance. Please respond to this message stating your intent to do so. You may either log into your control panel with us, and access this ticket via the 24/7 help desk, or provide this ticket number to our Live Chat or phone representatives. Failure to respond to this message within XX hours will result in the suspension of the affected domain with us until such a time as this matter is resolved.
+Status
+
+    *
+      technical 'on hold' ToS
+
+TOS Violation - Malicious Software
+
+Your account has been found to contain material or software which is in violation of our Terms of Service. We have disabled / removed the files from our server. To protect your account from further action you must agree to our request for compliance. Please respond to this message stating your intent to not host such applications in your account again.
+
+You may either log into your control panel with us, and access this ticket via the 24/7 help desk, or provide this ticket number to our Live Chat or phone representatives. Failure to respond to this message within XX hours will result in the suspension of the affected domain with us until such a time as this matter is resolved.
+Status
+
+    *
+      technical 'on hold' ToS
+

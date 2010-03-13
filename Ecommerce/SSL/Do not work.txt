@@ -1,0 +1,36 @@
+Check if it is installed.
+Use dig domain
+Check NS for domain.
+
+
+Chat InformationPlease wait for a site operator to respond.
+
+Chat InformationYou are now chatting with 'Jay'
+
+Jay: Hi
+
+you: Hello
+
+Jay: How may I assist you ?
+
+you: We have some troubles with trust logo
+
+Jay: Order # ?
+
+you: We use SSL from your reseller IXwebhosting
+
+you: Does trusted logo require something else except SSL order?
+
+Jay: Can I have the SSL order # or the domain name, which will help us to assist you better.
+
+you: sure, here is domain name tefacturo.com
+
+Jay: What is the issue you are facing now ?
+
+you: When we try to install trustlogo from http://www.trustlogo.com/ssl-certificate-support/ we receive error in pop-up with message that idAuthority Credentials NOT available for this site
+
+Jay: We are not offering the Trust Logo for an Essential SSL certificate, so IDAuthority credentials can't be displayed.
+
+Jay: If you want to display the Trust Logo with IDAuthority credentials, then you need to buy an Instant SSL certificate.
+
+you: Ok, understand, Thank you

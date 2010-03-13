@@ -1,0 +1,29 @@
+Go to 'Start->Computer' and then click 'Uninstall or change a program' that should be on the button bar at the top. Then click 'Turn Windows features on or off' and after you click 'Continue' on the security prompt, you should see a list of components. Scroll down to 'Telnet Client' and check it. When you click 'Ok' it will install it for you and you should be all set to Telnet to your hearts content.
+
+MAC
+The Terminal application can be activated by navigating to /Applications/Utilities in the Finder and double-clicking the Terminal.app icon.
+
+Vista
+1. Click Start then select Control Panel.
+2. Select Programs and Features.
+3. Select Turn Windows features on or off.
+4. Select the Telnet Client option.
+5. Click OK.
+6. A dialog box will appear to confirm installation. The telnet command should now be available.
+
+
+Win XP
+On your Windows system click Start->Run... Enter there cmd and press Enter. When windows Console will opened, please type there next string: telnet mail.pelbros.com 25 
+then press Enter. 
+Then provide us the result that you would have.
+
+		WIN XP
+
+I have also verified alert history for your server and found no downtime reports at the mentioned time. Please try to re-check your mail server from your end. To do this please click on "Start" button from your local PC, click on "Run" and type "cmd" --> press Enter --> type  telnet mail.yourdomain.com 25 --> press Enter.  And if all is working fine you should see the same message as I provided above. In other case we highly recommend you to contact your Internet Service Provider (ISP) and make sure that do not block SMTP port 25. If they block port 25 you can either ask them to remove the blockage or use their SMTP server to send mails out or request their outgoing mail server information, and use this for your outgoing email.
+
+
+
+		Mac OS
+Please activate Terminal application. The Terminal application can be activated by navigating to /Applications/Utilities in the Finder and double-clicking the Terminal.app icon. Type telnet mail.heyduk.net 25. And if all is working fine you should see the same message as I provided above. In other case we highly recommend you to contact your Internet Service Provider (ISP) and make sure that do not block SMTP port 25. If they block port 25 you can either ask them to remove the blockage or use their SMTP server to send mails out or request their outgoing mail server information, and use this for telnet your outgoing email.
+
+Terminal application (it can be activated by navigating to /Applications/Utilities in the Finder and double-clicking the Terminal.app icon)

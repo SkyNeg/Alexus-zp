@@ -1,0 +1,6 @@
+To run traceroute on a Mac, perform the following steps:
+Note: The following steps were created using Mac OS X. For earlier operating systems, you will need to download and run a third party utility.
+Step one: From your hard-drive, open the Applications folder, and click to open the Utilities folder.
+Step two: Double-click Terminal.
+Step three: Enter traceroute followed by your domain name.
+Note: Traceroute will tell you how many routers your packets travel through, and how long it takes for them to travel between routers. If the routers have DNS entries, traceroute will list the names of the routers, their network affiliation and geographic location.

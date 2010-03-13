@@ -1,0 +1,9 @@
+Очереди на смарт хостах:
+[root@smh02 ~]# find /var/spool/postfix/{active,deferred,bounce,incoming} -type f |wc -l
+16894
+[root@smh03 ~]# find /var/spool/postfix/{active,deferred,bounce,incoming} -type f |wc -l
+14992
+[root@smh04 ~]#  find /var/spool/postfix/{active,deferred,bounce,incoming} -type f |wc -l
+5090
+[root@smh06 ~]# find /var/spool/postfix/{active,deferred,bounce,incoming} -type f |wc -l
+11545

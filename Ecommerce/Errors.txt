@@ -1,0 +1,6 @@
+	500 - Internal Server Error
+
+The server encountered an unexpected condition which prevented it from fulfilling the request.
+he server encountered an error. Usually such error messages show up with CGI scripts. Also you can get such an error message when you have bad syntax in your .htaccess file.
+Also you have to check all permissions in cgi-bin folder it should be 755.
+In some cases the error connect with server problems. (notice by me once)

@@ -1,0 +1,25 @@
+Cron for php on the old cp should be setup as /usr/local/bin/php /hsphere/local/home/userdir/path/to/php
+
+Cron for php on the new cp should be setup as /hsphere/shared/php5/bin/php /hsphere/local/home/userdir/path/to/php 
+/hsphere/shared/php5/bin/php hsphere/local/home/C243352/hq-clips.com/
+
+
+
+You could use cronjob, it is installed on your server. To access it from your control panel you should follow next steps:
+Enter your control panel->FTP manager->crontab. First you have to enable it. Then to add new job you have to click Edit button and set there time, when you want your job run and command.
+
+
+
+Cron for php should be setup as /hsphere/shared/php5/bin/php  /hsphere/local/home/username/path/to/php 
+/hsphere/shared/php5/bin/php hsphere/local/home/C243352/hq-clips.com/
+
+
+/hsphere/shared/php5/bin/php /hsphere/local/home/kaewkanya/awakenergroup.com/batch/batch.php
+
+>/dev/null 2>&1 отмена отсылки мыла кроном
+
+
+admin@mykudos.org
+/hsphere/shared/php5/bin/php-cgi
+/hsphere/shared/php5/bin/php-cgi
+/hsphere/shared/php5/bin/php-cgi  -c /hsphere/local/home/brantcooper/mykudos.org/cgi-bin/php.ini /hsphere/local/home/brantcooper/mykudos.org/test_Cron.php

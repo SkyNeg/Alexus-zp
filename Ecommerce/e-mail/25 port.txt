@@ -1,0 +1,90 @@
+эт темплатка по блоку 25 порта
+
+In the ongoing war against spam, many ISP's have instituted what is known as a port 25 block. This block is intended to allow the ISP to regulate what email travels across their networks.
+While this is a very good way to help eliminate random spam sources, it does unfortunately affect the legitimate people who simply want to use another email server to send their email.
+Sadly at this time there is no ?x93;trust?x94; system in place that would allow certain email providers to be granted access, so the way to proceed at this point would be to utilize your ISP's email server for outgoing messages.
+This will not affect your email in anyway, as an outgoing mail server is not unlike a postal mail drop box. It merely facilitates the starting point for the piece of mail.
+We highly recommend that you contact your ISP and request their outgoing mail server information, and use this for your outgoing email. 
+
+
+(5:21:53) Lexus: я почитаю :)
+(5:25:11) Juliet: ¬ отличие от почтового сервера, клиент электронной почты обычно отправл€ет сообщение не пр€мо на соответствующий сервер получател€, а на один и тот же почтовый сервер, который выступает как релей. ќбычно это почтовый сервер провайдера или компании. ќтправка почты чаще всего осуществл€етс€ про протоколу SMTP.
+
+
+How to check whether SMTP port 25 is blocked?
+
+The standard port used for SMTP connections is 25. One of the most common reasons for not being able to send messages is that your Internet service provider blocks this port. This is why using an alternative SMTP port is highly recommended.
+
+ 
+
+Here's how to, depending on your OS, check whether your ISP blocks port 25:
+
+ 
+
+    * Check port 25 in Windows
+
+
+Click on the Start menu button, usually located at the lower left corner of the screen. There is a tab called "Run". Click it and a new window will pop up. In the text field of this window you need to type cmd and then press the "Enter" key. Another window will open. It is the so called "MS-DOS prompt" or "command prompt". Just type the following command in the command prompt window and press "Enter":
+
+telnet my-domain-name.com 25
+
+ 
+
+    * Check port 25 in Mac OS
+
+
+Each Mac OS is delivered with a preinstalled terminal emulator. The terminal is a tool which allows you to execute commands from the command line. Usually, the terminal is located under your Mac HD -> "Applications" directory -> Utilities sub-directory. When the window opens, you will see a command line with a flashing cursor on it so you can start typing right away. Just type the following command and press "Enter":
+
+telnet my-domain-name.com 25
+
+ 
+
+    * Check port 25 in Linux
+
+ 
+
+Open your favorite terminal emulator and execute the following command in order to check the connection on port 25 to your website:
+
+telnet my-domain-name.com 25
+
+ 
+
+ 
+
+Results from the 25 port check
+
+
+If the test is successful, you should receive a message similar to this one:
+
+ 
+
+220-serv01.siteground173.com ESMTP Exim 4.63 #1 Wed, 18 Apr 2008 07:17:30 -0500
+220-We do not authorize the use of this system to transport unsolicited,
+220 and/or bulk e-mail.
+
+
+If you get a message saying that the connection is refused we recommend that you use the alternative port for your SMTP connection.
+
+ 
+
+What is the alternative SMTP port and how to configure an email client to use it?
+
+ 
+
+The reason why most ISPs block the default SMTP port 25 is because it is used for sending unsolicited emails.
+
+ 
+
+Fortunately, web hosting providers such as SiteGround offer an alternative SMTP port for the convenience of their customers.
+
+ 
+
+The alternative SMTP port all SiteGround customers can use is 2525.
+
+ 
+
+Information on how to change the SMTP port for the most popular mail clients can be found in our Email tutorial.
+
+ 
+
+If you wish to be able to use an alternative SMTP port, as well as have unlimited mail accounts and stable mail service, you may sign up for an account at SiteGround. Our servers are using state of the art spam protection system with custom ACL filters which will ensure you will avoid the spam and at the same time never miss your important emails.

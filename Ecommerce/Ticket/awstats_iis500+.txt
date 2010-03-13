@@ -1,0 +1,6 @@
+# config file. 
+LogFile=c:\Program" "Files\HSphere\3rdparty\perl\bin\perl.exe D:\hshome\naqvi56\code4green.com\awstats\tools\logresolvemerge.pl D:\hshome\naqvi56\logs\code4green.com\ex* |
+SiteDomain="code4green.com"
+HostAliases="code4green.com www.code4green.com"
+LoadPlugin="geoip GEOIP_STANDARD D:\hshome\naqvi56\code4green.com\awstats\cgi-bin\GeoIP.dat"
+LogFormat = "%time2 %host %logname %other %other %other %other %method %url %query %code %other %bytesd %other %other %other %ua %other %referer"
