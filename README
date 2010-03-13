@@ -1,0 +1,25 @@
+C:\Documents and Settings\kirill.skripka\Desktop\Alexus-zp>C:\kirill.skripka\cygwin\bin\git push origin master
+Counting objects: 186, done.
+Delta compression using up to 2 threads.
+Compressing objects: 100% (163/163), done.
+Writing objects: 100% (186/186), 202.63 KiB, done.
+Total 186 (delta 5), reused 0 (delta 0)
+To git@github.com:Lexus/Alexus-zp.git
+ * [new branch]      master -> master
+
+C:\Documents and Settings\kirill.skripka\Desktop\Alexus-zp>C:\kirill.skripka\cygwin\bin\git add *
+
+C:\Documents and Settings\kirill.skripka\Desktop\Alexus-zp>C:\kirill.skripka\cygwin\bin\git commit -a -m "Second one"
+[master 46ad614] Second one
+ 1 files changed, 1 insertions(+), 1 deletions(-)
+
+C:\Documents and Settings\kirill.skripka\Desktop\Alexus-zp>C:\kirill.skripka\cygwin\bin\git push origin master
+Counting objects: 9, done.
+Delta compression using up to 2 threads.
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (5/5), 453 bytes, done.
+Total 5 (delta 3), reused 0 (delta 0)
+To git@github.com:Lexus/Alexus-zp.git
+   cf74bed..46ad614  master -> master
+
+C:\Documents and Settings\kirill.skripka\Desktop\Alexus-zp>
