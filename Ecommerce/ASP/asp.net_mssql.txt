@@ -1,0 +1,23 @@
+<%@ Import Namespace="System.Data.SqlClient" %>
+<%
+Dim conn As SqlConnection
+    Dim sqlQuery, sqlQueryres As SqlCommand
+    Dim dtrTbl, dtrTblres As SqlDataReader
+
+   
+    conn = New SqlConnection("Server=mssql502.opentransfer.com;uid=C273545_just4kidz;pwd=Just4kidz!;database=C273545_just4kidz")
+conn.Open()
+    sqlQuery = New SqlCommand("Insert into Test_table (text) values ('temp')", conn)
+    dtrTbl = sqlQuery.ExecuteReader()
+    dtrTbl.Close()
+    sqlQueryres = New SqlCommand("Select id, text From Test_table", conn)
+    dtrTblres = sqlQueryres.ExecuteReader()
+    While dtrTblres.Read()
+        Response.Write("<li>")
+        Response.Write(dtrTblres("id"))
+        Response.Write(" - ")
+        Response.Write(dtrTblres("text"))
+    End While
+    dtrTblres.Close()
+conn.Close()
+%>
