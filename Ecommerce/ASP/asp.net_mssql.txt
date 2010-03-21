@@ -21,3 +21,9 @@ conn.Open()
     dtrTblres.Close()
 conn.Close()
 %>
+
+[C#]
+string connStr = ConfigurationManager.ConnectionStrings["MainConnStr"].ConnectionString;
+
+[VB]
+Dim connStr As String = ConfigurationManager.ConnectionStrings("MainConnStr").ConnectionString

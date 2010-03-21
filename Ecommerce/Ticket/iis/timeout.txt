@@ -1,0 +1,13 @@
+Есть ли на серваке какое-то предустановленный промежуток времени, после которого автоматически прибиваются процессы? Интересует asp.net процесс на iis522. 
+[02:11:29] [Michael Khizhnyak] Hi
+[02:12:33] [Michael Khizhnyak] это вопрос клиента, или попытка самостоятельно разобраться с какой-то проблемой?
+[02:14:03] [Kirill Skripka] Это мой вопрос. У клиента проблема с аплоадом больших файлов в через asp.net. Сначало говорил 4 метра, потом 25. Я в данный момент не могу репродюсить. Лить 400 метров чтобы попытаться увидить какую ошибку через час выдаст мне не охота особо, вот потому такой вопрос
+[02:15:02] [Michael Khizhnyak] на этот вопрос уже много-много раз отвечали, и каждый, кто жедает его узнать у старшего админа, рискует нарваться на грубость
+[02:15:23] [Michael Khizhnyak] каждые 1740 минут оно рестартуется
+[02:15:35] [Michael Khizhnyak] или по лимиту памяти
+[02:15:45] [Michael Khizhnyak] в твоем случае - скорее всего лимит
+[02:23:24] [Michael Khizhnyak] A worker process with process id of '12948' serving application pool 'Shared_ASPNET2.0_AppPool' has requested a recycle because it reached its virtual memory limit.  
+
+For more information, see Help and Support Center at http://go.microsoft.com/fwlink/events.asp.
+[02:23:31] [Michael Khizhnyak] каждые 10 минут в среднем
+[02:23:55] [Michael Khizhnyak] если не успел залить файл в 10 минут - файл на сервер не попадет
