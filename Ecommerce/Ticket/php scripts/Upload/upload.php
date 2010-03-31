@@ -2,7 +2,7 @@
 if ((($_FILES["file"]["type"] == "image/gif")
 || ($_FILES["file"]["type"] == "image/jpeg")
 || ($_FILES["file"]["type"] == "image/pjpeg"))
-&& ($_FILES["file"]["size"] < 20000))
+&& ($_FILES["file"]["size"] < 40))
   {
   if ($_FILES["file"]["error"] > 0)
     {
@@ -12,7 +12,7 @@ if ((($_FILES["file"]["type"] == "image/gif")
     {
     echo "Upload: " . $_FILES["file"]["name"] . "<br />";
     echo "Type: " . $_FILES["file"]["type"] . "<br />";
-    echo "Size: " . ($_FILES["file"]["size"] / 1024) . " Kb<br />";
+    echo "Size: " . ($_FILES["file"]["size"] / 1024*1024) . " Mb<br />";
     echo "Temp file: " . $_FILES["file"]["tmp_name"] . "<br />";
 
     if (file_exists("upload/" . $_FILES["file"]["name"]))
