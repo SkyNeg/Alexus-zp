@@ -1,4 +1,4 @@
 #!/usr/bin/perl -w  <---- путь к перл интерпритатору
-use CGI qw( :standard);  <---- заголовок HTTP
-print "Content-type: text/html\n\n";  <---- заголовок HTTP
-use CGI::Carp qw[fatalsToBrowser]; <---- вывод ошибок в браузер
+use CGI qw( :standard);
+print "Content-type: text/html\n\n";
+use CGI::Carp qw[fatalsToBrowser];
