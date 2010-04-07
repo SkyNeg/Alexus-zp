@@ -19,7 +19,7 @@ Please compare your mail client settings with the following data:
 5) SMTP Password the same as for POP3
 6) SMTP 25 : mail.ajdesignz.com
 7) SPA (Secure Password Authentication): should NOT be checked.
-8) My server requires Authentication: should be checked
+8) My SMTP server requires Authentication: should be checked
 9) Make sure you don't use firewall and your ISP don't block connection
 
 If you still cannot send mails, please provide us the name of the mail account in trouble and do the following on your local pc:

@@ -1,11 +1,9 @@
-Abuse Complaints
-
 A TOS violations will only accumulate if they are within 12 months of each infraction. If 2 or more infractions happen within (10) day period of each other, and is for the same infraction, it counts as 1 violation.
 
 It is a TOS violation only if the subject line of the ticket says TOS Violation.
 Procedure
 
-If you are dealing with an outdated software issue (such as phpbb, joomla, wordpress, ect), please follow these steps Outdated Software Procedure
+If you are dealing with an outdated software issue (such as phpBB, Joomla!, WordPress, etc), please follow these steps Outdated Software Procedure
 
 SA Steps
 
@@ -61,23 +59,48 @@ Three Strikes and You Are Out
 In the event a customer’s account receives three complaints of the same nature the account may be suspended after evaluation by two members of Ecommerce Executive Management. In some cases, especially with phishing, it is in our best interests to work with the customer to keep it from repeating instead of permanently suspending the customer. After evaluating, if the managers decide to permanently suspend, a manager should update the modify notes with the reason for suspension “persistent tos violator” and possibly update these notes with the violation ticket numbers. The following template should be sent to the customer by the manager or the representative handling the ticket:
 Account Suspension- TOS Violations
 
-As per our records your account has violated our terms of service three times already. We have been trying to work with you to permanently resolve the situation, but unfortunately the actions taken were not persistent. Due to security reasons and our obligation to provide stable services towards other customers hosted on the same server, we regret to inform you that we cannot reenable your account. We will be unable to provide you with a back up of any content on our servers. If you have any further questions regarding this issue or our hosting services in general, please do not hesitate let us know.
+Hello (Name),
+
+I must report to you that per our records you have violated our Terms of Service for a third time. Due to security reasons and for the performance of other customers located on your server block, we will be unable to re-enable your account. Also, we will not be able to provide you with any backups of content. If you have any further questions regarding this issue or our hosting services in general please do not hesitate to let us know.
+
+Thank You,
+
+(Rep Name)
+
+(Brand)
+Refund for 3rd Time ToS
+
+We cannot refund any money to people who violate our Terms of Service three times. According to our ToS:
+
+B. Any-Time Money Back Guarantee IX Web Hosting proudly offers its subscribers an “Any-Time Money Back Guarantee.” This guarantee allows subscriber to use IX Web Hosting's services with full confidence and zero-risk. Consequently, subscriber may request a full refund of the current month's fees (not the current billing cycle) and to-date pre-paid fees for future months, less any additional over-usage, setup fees and free domain registration costs (see section I.C below). Terminated accounts are not eligible for this guarantee if the termination occurred due to a violation of this TOS.
+
+Also, another facet of our ToS says the following:
+
+XV. Suspension of Service or Cancellation IX Web Hosting reserves the right to suspend network access to any subscriber if in the judgment of IX Web Hosting, the subscriber's account is the source or target of a violation of any of the terms of the TOS, or for any other reason which IX Web Hosting deems necessary. If inappropriate or illegal activity is detected or brought to our attention by a third party, all accounts of the subscriber in question will be deactivated until our investigation is complete. Multiple violations of the TOS will result in permanent cancellation of the account without refund of any fee. Prior notification to the subscriber is not assured. In extreme cases, law enforcement will be contacted regarding the activity. The subscriber may not be credited for the time the subscriber's machines were suspended if the subscriber is found to be at fault. The subscriber is also responsible for maintaining a backup of his current data at all times. Upon the third violation of the terms of service no backups will be provided.
 Templates
 Spam
 
-We have been notified of an e-mail spam complaint generated from an e-mail address on your account. In most cases, our customers do not intend to send spam. When we receive these complaints, it is important that we investigate the claim, and then ensure that you know the guidelines for what makes a commercial e-mail qualify as spam, and receive your assurance that you will not send any Spam from your account.
+Hello (Name),
+
+We have been notified of a complaint regarding “spam” generated from an e-mail address on your account. In most cases, our customers do not intend to send spam. When we receive these complaints, it is important that we investigate the claim, and then ensure that you know the guidelines for what qualifies a commercial e-mail as spam. We require a response giving us your assurance that you will not send any Spam from your account in the future.
 
 To make sure that your e-mail does not qualify as spam, please view the governmental guidelines here:
 
 http://www.ftc.gov/bcp/edu/pubs/business/ecommerce/bus61.shtm
 
-Please understand that we must maintain a strict policy against spam, and your cooperation protects not only you and your account, but all of the mail accounts hosted on your mail server, from becoming blacklisted. If your mail server were to become blacklisted, all of the customers using that server would be blocked from sending mail, as it would all be considered potential spam.
+Please understand that we must maintain a strict policy against spam, and your cooperation protects not only you and your account, but all of the mail accounts hosted on your mail server, from becoming blacklisted. In a shared hosting environment, if a mail server becomes blacklisted, all of the customers using that server would be blocked from sending mail, as any email exiting from a given server would then be considered potential spam by the blacklisting entity.
 
-If you determine that you did not send this mail, please change all of your e-mail and control panel passwords. You will also want to scan your local computer(s) with an updated virus filtering software (like AVG or Avast) and check the security of the network that most of your mail originates from. You may also want to check your website's files and code for potential security vulnerabilities.
+If you determine that you did not send this mail, please change all of your e-mail and control panel passwords. You will also want to scan your local computer(s) with an updated virus filtering software (such as AVG or Avast - both are free downloads) and check the security of the network that most of your mail originates from. You may also want to check your website's files and code for potential security vulnerabilities.
 
-Please respond to this ticket letting us know of your intention to stop sending any spam, whether it is intentional or not. You must agree to our request for compliance within XX hours or your account will become suspended. We do not want that to happen, so please respond to this message by logging into your control panel with us, and accessing this ticket via the 24/7 help desk, or provide this ticket number to our Live Chat or phone representatives.
+Please respond to this ticket letting us know of your intention to stop sending any spam, whether it is intentional or not. We will require you to agree to our request for compliance within XX hours or your account will become suspended. We do not wish to suspend your entire account, so it will be important for you to respond to this message by logging into your control panel, and accessing this ticket via the 24/7 help desk, or provide this ticket number to our Live Chat or phone representative.
 
 We appreciate your cooperation in this matter and thank you for your time.
+
+Thank You,
+
+(Name)
+
+(Brand)
 Status
 
     *
@@ -86,11 +109,21 @@ Status
 Phishing
 1st and 2nd Violations
 
-We have received notification of phishing material in your account. Phishing files are usually placed through some type of exploit of out dated code, weak file and folder permissions. Packaged shopping carts and photo galleries are usual sources as hackers find exploits and developers fix them almost daily, so unless you constantly update the software or completely secure it things like this can happen.
+Hi (Name),
 
-You must agree to remove this content and update any software that has resulted in security holes. Per our terms of service, on your 3rd terms of service violation, your account will be terminated. We would like to work with you to prevent your account reaching this limit.
+I am sorry to have to report this, but we have received notification of phishing material in your account. Usually, phishing files are placed through some sort of exploit either in outdated code or weak file or folder permissions. Shopping carts and photo galleries are common culprits as hackers find exploits that developers fix almost daily, so keeping all programs as up to date as possible is a necessity.
 
-To protect your account from further action you must agree to our request for compliance. Please respond to this message letting us know how you intend to correct this issue. You may either log into your control panel with us, and access this ticket via the 24/7 help desk, or provide this ticket number to our Live Chat or phone representatives. Failure to respond to this message within XX hours will result in the suspension of the affected account with us until such a time as this matter is resolved.
+If you would, please remove this content and update any third-party software in your account that may need it. We would really like to work with you to get this solved because on your 3rd Terms of Service violation we would have to terminate your account.
+
+As soon as possible, please reply to this ticket saying you agree to comply with the terms above and also let us know what actions you will be taking to solve this problem. You may either log into your control panel with us or access this ticket via the 24/7 help desk or either call in or chat with us and provide this ticket number to our Live Chat or phone representatives.
+
+As mentioned above, please respond to this ticket within XX hours. If we do not hear from you within this time frame, we will have to suspend your account until this matter is resolved.
+
+Thank You,
+
+(Rep Name)
+
+(Brand)
 Status
 
     *
@@ -116,10 +149,10 @@ Thank you for bringing this security issue to our attention. We highly value bot
     *
       HostExcellence Tech
 
-OUR SIDE:Path to phishing material redirect disabled. Since it was in the coding, had to disable the site via chmod. There was no site except an index list.
+OUR SIDE: Path to phishing material redirect disabled. Since it was in the coding, had to disable the site via chmod. There was no site except an index list.
 
     *
-      INSERT PATH THAT LINKS TO THE TICKET IN HSPHERE
+      INSERT PATH THAT LINKS TO THE TICKET IN H-SPHERE
 
 Example: https://ghcp.ecommerce.com/index.php/helpdeskticket.dspFrmTicketModify/hd_ticketid/809712
 
@@ -154,7 +187,7 @@ Thank you for bringing this security issue to our attention. We highly value bot
 OUR SIDE: Path to phishing material disabled. Disabled the site via chmod.
 
     *
-      INSERT PATH THAT LINKS TO THE TICKET IN HSPHERE Example: This link opens an example ticket. You must be logged into GHCP first before clicking this link.
+      INSERT PATH THAT LINKS TO THE TICKET IN H-SPHERE Example: This link opens an example ticket. You must be logged into GHCP first before clicking this link.
 
     *
       RESOLVE THESE TICKETS to GENERAL POOL
@@ -215,18 +248,23 @@ Examples of the content that must be removed are provided below. Please note tha
 INDICATE DOMAINS AND URLS PROVIDED IN COMPLAINT LETTER AND BE SURE TO INDICATE WHAT IT IS ABOUT THE LINKS THAT IS IN VIOLATION
 Fair Use
 
-We are notifying you that your account has been found to violate our “Fair-Use” Resource Assignment portion of our Terms of Service, due to the amount of disk usage that is being taken.
+Hello (Name),
 
-We ask that you either reduce disk usage or look for dedicated hosting for this site.
+We are notifying you that your account has been found to violate our “Fair-Use” Resource Assignment portion of our Terms of Service, due to the amount of disk usage that is being used.
 
-We have a shared hosting environment that we must maintain at a certain level of performance. This performance is monitored and balanced by us, however there are times when accounts can cause the server’s load to increase degrading the performance for all other customers on this server.
+We ask that you either reduce disk usage or look for dedicated hosting for this site. You can find more information about our VPS packages under our IXwebhosting brand:
 
-To protect your account from further action you must agree to our request for compliance. Please respond to this message stating your intent to do so. You may either log into your control panel with us, and access this ticket via the 24/7 help desk, or provide this ticket number to our Live Chat or phone representatives. Failure to respond to this message within 72 hours will result in the suspension of the affected domain with us until such a time as this matter is resolved.
-Status
+http://www.ixwebhosting.com/index.php/v2/pages.vpsHosting
 
-    *
-      technical 'on hold' ToS
+Within a shared hosting environment, we must maintain a certain level of performance. This performance is monitored and balanced by our staff, however there are times when accounts can cause the server’s load to increase. This degrades the performance for all other customers on this server.
 
+To protect your account from further action you must agree to our request for compliance. Please respond to this message stating your intent to do so. You may either log into your control panel with us, and access this ticket via the 24/7 help desk, or provide this ticket number to our Live Chat or phone representatives. Failure to respond to this message within 72 hours will result in the suspension of your account with us until such a time as this matter is resolved.
+
+Thank You,
+
+(Name),
+
+(Brand)
 Status
 
     *
@@ -234,11 +272,19 @@ Status
 
 Server Overload - Database
 
-We are notifying you that your account, or a portion or feature of your account has caused an overload on one of our servers. We have a shared hosting environment that we must maintain at a certain level of performance. This performance is monitored and balanced by us, however there are times when accounts can cause the server’s load to increase degrading the performance for all other customers on this server.
+Hello (Name),
+
+We are notifying you that your account, or a portion or feature of your account, has caused an overload on one of our servers. Within a shared hosting environment, we must maintain a certain level of performance. This performance is monitored and balanced by our staff, however there are times when accounts can cause the server's load to increase. This degrades the performance for all other customers on this server.
 
 To protect your account from further action you must agree to our request for compliance. Please respond to this message stating your intent to do so. You may either log into your control panel with us, and access this ticket via the 24/7 help desk, or provide this ticket number to our Live Chat or phone representatives.
 
 Please contact us to resolve this matter.
+
+Thank You,
+
+(Name),
+
+(Brand)
 Status
 
     *
@@ -246,9 +292,23 @@ Status
 
 Server Overload - Web
 
-We are notifying you that your account, or a portion or feature of your account has caused an overload on one of our servers. We have a shared hosting environment that we must maintain at a certain level of performance. This performance is monitored and balanced by us, however there are times when accounts can cause the server’s load to increase degrading the performance for all other customers on this server.
+Hello (Name),
 
-To protect your account from further action you must agree to our request for compliance. Please respond to this message stating your intent to do so. You may either log into your control panel with us, and access this ticket via the 24/7 help desk, or provide this ticket number to our Live Chat or phone representatives.
+According to our admins either your account, or a portion or feature of it, has caused an overload on one of our servers. As you are on a shared hosting environment, we must maintain certain levels of performance for all customers on the server. This is monitored by us and we send these notifications out when we notice that a certain account is causing a load on the server degrading performance for everyone else.
+
+The exact problem with your account is detailed below:
+
+(In this section please post, with as much detail as possible, what exactly caused the overload and steps the customer can take to fix it.)
+
+Unfortunately, until this issue is resolved your account will have to remain disabled. Please let us know you intend to do so and we can give you limited access to your account to get this fixed.
+
+You may either log into your control panel with us or access this ticket via the 24/7 help desk or either call in or chat with us and provide this ticket number to our Live Chat or phone representatives.
+
+Thank You,
+
+(Rep Name)
+
+(Brand)
 Status
 
     *
@@ -256,7 +316,17 @@ Status
 
 TOS Violation - Adult Content
 
-Your account has been found to contain material which is in violation of our Terms of Service. This material must be removed immediately. To protect your account from further action you must agree to our request for compliance. Please respond to this message stating your intent to do so. You may either log into your control panel with us, and access this ticket via the 24/7 help desk, or provide this ticket number to our Live Chat or phone representatives. Failure to respond to this message within XX hours will result in the suspension of the affected domain with us until such a time as this matter is resolved.
+Hello (Name),
+
+We are writing to let you know that your account has been found to contain material that is in violation of our Terms of Service. We had to disable/remove the files from the server. To keep us from taking further action, please respond to this ticket within XX hours.
+
+To do this, you may either log into your control panel with us or access this ticket via the 24/7 help desk or either call in or chat with us and provide this ticket number to our Live Chat or phone representatives.
+
+Thank You,
+
+(Rep Name)
+
+(Brand)
 Status
 
     *
@@ -264,9 +334,17 @@ Status
 
 TOS Violation - Malicious Software
 
-Your account has been found to contain material or software which is in violation of our Terms of Service. We have disabled / removed the files from our server. To protect your account from further action you must agree to our request for compliance. Please respond to this message stating your intent to not host such applications in your account again.
+Hello (Name),
+
+Your account has been found to contain material or software which is in violation of our Terms of Service. We have disabled / removed these files. To protect your account from further action you must agree to our request for compliance. Please respond to this message stating your intent to not host such applications in your account again.
 
 You may either log into your control panel with us, and access this ticket via the 24/7 help desk, or provide this ticket number to our Live Chat or phone representatives. Failure to respond to this message within XX hours will result in the suspension of the affected domain with us until such a time as this matter is resolved.
+
+Thank You,
+
+(Name),
+
+(Brand)
 Status
 
     *
