@@ -69,7 +69,7 @@ To do this, follow these steps:
 
 a) Either build your own Key Generator (http://support.microsoft.com/kb/313091/EN-US/) or use this tool (http://www.aspnetresources.com/tools/keycreator.aspx). I highly recommend you use the online tool. So assuming you will use the online tool:
 
-b) In the online tool, simply click on ?Generate?.
+b) In the online tool, simply click on "Generate".
 
 c) Copy the content in the textbox into your site's web.config file. The machineKey node should be within <system.web> eg.
 
