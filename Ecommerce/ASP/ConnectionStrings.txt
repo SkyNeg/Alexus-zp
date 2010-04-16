@@ -4,3 +4,4 @@
 
 ASP.NET + MSSQL (From DNN)
 <add name="SiteSqlServer" connectionString="Data Source=98.130.254.206;Initial Catalog=C244172_imaginefilms;User ID=C244172_newuser;Password=Falcon90" providerName="System.Data.SqlClient" />
+<add name="conn_name" connectionString="Data Source=server;Initial Catalog=database;User ID=user;Password=password" providerName="System.Data.SqlClient" />
