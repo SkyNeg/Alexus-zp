@@ -12,12 +12,12 @@ Please compare your mail client settings with the following data:
 Dear ,
 
 Please compare your mail client settings with the following data:
-1) POP3 login: user@ajdesignz.com
+1) POP3 login: user@barrysfranklin.com
 2) POP3 Password: xxxxxx
-3) POP3 Port 110 : mail.ajdesignz.com
-4) SMTP login: user@ajdesignz.com
+3) POP3 Port 110 : mail.barrysfranklin.com
+4) SMTP login: user@barrysfranklin.com
 5) SMTP Password the same as for POP3
-6) SMTP 25 : mail.ajdesignz.com
+6) SMTP 25 : mail.barrysfranklin.com
 7) SPA (Secure Password Authentication): should NOT be checked.
 8) My SMTP server requires Authentication: should be checked
 9) Make sure you don't use firewall and your ISP don't block connection
@@ -148,3 +148,13 @@ You may find detailed info on how to add delivery rules in MS Outlook at http://
 4) SMTP (Port 25) : mail505.opentransfer.com
 5) SPA (Secure Password Authentication): should NOT be checked.
 6) My SMTP server requires Authentication: should be checked
+
+Please compare your mail client settings with the following data:
+1) IMAP login: user@barrysfranklin.com
+2) IMAP Password: xxxxxx
+3) IMAP Port 143 : mail.barrysfranklin.com
+4) SMTP login: user@barrysfranklin.com
+5) SMTP Password the same as for POP3
+6) SMTP 25 : mail.barrysfranklin.com
+7) SPA (Secure Password Authentication): should NOT be checked.
+8) My SMTP server requires Authentication: should be checked
