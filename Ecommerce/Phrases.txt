@@ -2,7 +2,7 @@ Hello, my name is Kirill. How can I help you today?
 
 I am sorry, there is slow issue with the service related to you control panel. Our administrators are working on this issue. We will fix it as fast as possible
 
-I am sorry, there is slow issue with web service at this moment. Our administrators are working on this issue. It should be solved as soon as possible. Unfortunately there is no ETA for solving this problem
+I am sorry, there is slowness issue with web service at this moment. Our administrators are working on this issue. It should be solved as soon as possible. Unfortunately there is no ETA for solving this problem
 
 I am sorry, there is a slight issue with web server at this moment. It is primary task our administrators are working on. All should be fixed as soon as possible and then you will be able to access your sites as well as control panel and all other services again. 
 
