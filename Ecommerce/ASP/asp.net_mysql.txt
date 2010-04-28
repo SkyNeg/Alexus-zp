@@ -1,0 +1,30 @@
+<%@ Page Language="VB" AutoEventWireup="False"
+EnableSessionState="False" EnableViewState="False" %>
+<%@ Import Namespace="System.Data" %>
+<%@ Import Namespace="System.Data.Odbc" %>
+
+<%
+Dim ConnStr As String = "Driver={MySQL ODBC 3.51 Driver};Server=mysql512.ixwebhosting.com;Database=C291175_chamsvarsity;uid=C291175_admin;pwd=chamsAdmin1;option=3"
+Dim con As OdbcConnection = New OdbcConnection(ConnStr)
+Dim cmd As OdbcCommand = New OdbcCommand("SELECT * FROM contactus", con)
+con.Open()
+dgrAllNames.DataSource = cmd.ExecuteReader(CommandBehavior.CloseConnection Or CommandBehavior.SingleResult)
+dgrAllNames.DataBind()
+%>
+
+<html>
+<head>
+<title>Displaying Records from MySQL 'Names' table</title>
+<style>
+body { font: 100% Verdana; }
+</style>
+</head>
+<body>
+
+<p align="center">All records in the 'Names' table:</p>
+
+<asp:DataGrid ID="dgrAllNames" HorizontalAlign="Center"
+CellPadding="3" Runat="server" />
+
+</body>
+</html> 
