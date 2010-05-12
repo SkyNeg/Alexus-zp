@@ -11,13 +11,11 @@ Please go through all points above and make sure that every requirement is satis
 
 
 
-If the domain is to be marked FREE
-
+If the domain is to be marked FREE:
 We have started the transfer process for (DOMAIN). This domain has been renewed for an additional year and marked as FREE. Soon, you will receive a confirmation email, originating from Tucows (OpenSRS), our registration service provider. Please note that this e-mail will be sent to the administrative contact email address you specified for this domain - [XXXXX@DOMAIN.COM]. Once you receive it, please follow the directions outlined in this e-mail. If you are transferring a .org .com .net or .info domain, you will need the authorization code provided by your current registrar to complete this process.
 
 Please allow up to two weeks for the domain registration transfer to be completed. Once the transfer is complete, the domain will become available in your product control panel. Please be aware that this transferred domain is subject to the terms outlined in our terms of service. If we can be of any further assistance, please do not hesitate to contact us.
-If the domain is to be marked PAID
-
+If the domain is to be marked PAID:
 We have started the transfer process for (DOMAIN). Since you decided to keep this domain as PAID, we have charged the credit card on file ending in (CC NUMBERS) the amount of (AMOUNT) for an additional year of registration for this domain. Soon, you will receive a confirmation email, originating from Tucows (OpenSRS), our registration service provider. Please note that this e-mail will be sent to the administrative contact email address you specified for this domain - [XXXXX@DOMAIN.COM]. Once you receive it, follow the directions outlined in this e-mail. If you are transferring a .org .com .net or .info domain, you will need the authorization code provided by your current registrar to complete this process.
 
 Please allow up to two weeks for the domain registration transfer to be completed. Once the transfer is completed, the domain will become available in your product control panel. Please be aware that this transferred domain is subject to the terms outlined in our terms of service. If we can be of any further assistance, please do not hesitate to contact us.

@@ -12,25 +12,25 @@ Please compare your mail client settings with the following data:
 Dear ,
 
 Please compare your mail client settings with the following data:
-1) POP3 login: user@barrysfranklin.com
+1) POP3 login: user@pollyathome.com
 2) POP3 Password: xxxxxx
-3) POP3 Port 110 : mail.barrysfranklin.com
-4) SMTP login: user@barrysfranklin.com
+3) POP3 Port 110 : mail.pollyathome.com
+4) SMTP login: user@pollyathome.com
 5) SMTP Password the same as for POP3
-6) SMTP 25 : mail.barrysfranklin.com
+6) SMTP 25 : mail.pollyathome.com
 7) SPA (Secure Password Authentication): should NOT be checked.
 8) My SMTP server requires Authentication: should be checked
 9) Make sure you don't use firewall and your ISP don't block connection
 
-If you still cannot send mails, please provide us the name of the mail account in trouble and do the following on your local pc:
+If you still cannot send mails, please do the following on your local pc:
 Start-> Run-> type there:cmd-> type in the popup window:
-telnet mail.iamngri.com  25
+telnet mail.pollyathome.com 25
 click enter And review the output you get. If you receive something like "Could not open connection to host:connect failed", etc. - such telnet answer means something from your end is blocking the connection to our mailserver through 25 SMTP port. Because there are no any problems from our server end:
-$ telnet mail.iamngri.com 25
-Trying 76.162.254.2...
-Connected to mail.iamngri.com (76.162.254.2).
+$ telnet mail.pollyathome.com 25
+Trying 76.162.254.33...
+Connected to mail.pollyathome.com (76.162.254.33).
 Escape character is '^]'.
-220 mail2.opentransfer.com ESMTP
+220 mail33.opentransfer.com ESMTP
 
 The reason can be any antivirus/firewall software installed on your PC or your ISP.
 In first case please try to disable it and recheck using our mailservice once again. If the problem is in your ISP - please contact them regarding your issue and ask to give you an alternative SMTP server details, so you could use them for configuration of your outgoing mailserver without any problems. 
