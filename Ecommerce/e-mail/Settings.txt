@@ -158,3 +158,10 @@ Please compare your mail client settings with the following data:
 6) SMTP 25 : mail.barrysfranklin.com
 7) SPA (Secure Password Authentication): should NOT be checked.
 8) My SMTP server requires Authentication: should be checked
+Webmail missed inbox
+
+I am sorry, but I checked your email account with Horde mail client and did not find any problem with viewing incoming messages. All of them could be shown. You can find attached image. 
+Pleas note, that described problem could be related to issue with web browser. Try to clear cache of your web browser and check webmail account once again
+Also you can try the following: 
+Login to webmail, click options, then go to Mailbox and Folder Display options -> change(decrease) Messages per page in the mailbox view value, submit changes and try to view your inbox once again. 
+Let us know if you need any further assistance. 
